@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Brock Beldham's design portfolio" />
+<meta name="keywords" content="Brock Beldham, Web Design, Graphic Design, Fine Art, Special Effects, Animation, Portfolio" />
+<title>Brock Beldham | Portfolio</title>
+
+<link href="favicon.ico" rel="Shortcut Icon" />
+<link href="styles/mainStyle.css" rel="stylesheet" type="text/css" title="Brock Beldham Portolio" />
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="styles/mobi.min.css" />
+<link rel="stylesheet" href="styles/jquery.mobile.structure-1.2.0.css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="Scripts/swfobject_modified.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $("a.preview").fancybox({
+    'titlePosition'    : 'over',
+    'overlayColor'    : '#000',
+    'overlayOpacity'  : 0.9
+  });
+  if(($(window).width())<750){
+    $("#pcView").hide();
+    $("#mobiView").show();
+  }
+  if(($(window).width())>750 ){
+    $("#mobiView").hide();
+    $("#pcView").show();
+  }
+  $(window).resize(function() {
+    if(($(window).width())<750){
+      $("#pcView").hide();
+      $("#mobiView").show();
+    }
+    if(($(window).width())>750){
+      $("#mobiView").hide();
+      $("#pcView").show();
+    }
+  });
+});
+</script>
+<script>
+
+$(document).ready(function() {
+
+  $('a.panel').click(function () {
+    $('a.panel').removeClass('selected');
+    $(this).addClass('selected');
+    current = $(this);
+    $('#wrapper').scrollTo($(this).attr('href'), 800);
+    return false;
+  });
+
+  $(window).resize(function () {
+    resizePanel();
+  });
+  
+});
+
+function resizePanel() {
+  width = $(window).width();
+  height = $(window).height();
+  mask_width = width * $('.item').length;
+  $('#debug').html(width  + ' ' + height + ' ' + mask_width);
+  $('#wrapper, .item').css({width: width, height: height});
+  $('#mask').css({width: mask_width, height: height});
+  $('#wrapper').scrollTo($('a.selected').attr('href'), 0);
+    
+}
+
+</script>
+
+</head>
+<body>
+
+<div id="pcView">
+<div id="wrapper">
+  <div id="mask">
+      
+        
+        
+        <!------------------------------header/footer-------------------------------------------->
+        
+        
+        <!-- Begin W3Counter Tracking Code -->
+    <script type="text/javascript" src="http://www.w3counter.com/tracker.js"></script>
+    <script type="text/javascript">
+    w3counter(65225);
+    </script>
+    <noscript>
+    <div><a href="http://www.w3counter.com"><img src="http://www.w3counter.com/tracker.php?id=65225" style="border: 0" alt="W3Counter" /></a></div>
+    </noscript>
+    <!-- End W3Counter Tracking Code-->
+        
+    <a href="#home" class="panel"><img src="images/logo.png" title="Brock Beldham's Logo" id="logo" /></a>
+        
+        <!--<img src="images/footerLeft.png" id="footerLeft" />-->
+        <div id="footerInfo">
+          <h5>Brock Beldham | Interactive Designer | brock.beldham[at]gmail[dot]com | 226-791-1524 | <a href="docs/brockBeldhamResume.pdf" target="_blank">Resume</a></h5>
+        </div>
+        
+        <!--<img src="images/footerRight.png" id="footerRight" />-->
+        <div id="footerLinks">
+          <a href="http://www.linkedin.com/profile/view?id=98919640&trk=tab_pro" target="_blank"><img src="images/inDesign.png" class="footerIcons" style="margin-left:46px;" /></a>
+            <a href="mailto:brock.beldham@gmail.com?Subject=Online Portfolio" target="_blank"><img src="images/mail.png" class="footerIcons" /></a>
+            <a href="http://twitter.com/#!/BrockBeldham" target="_blank"><img src="images/twitter.png" class="footerIcons" /></a>
+        </div>
+    
+        
+        
+        <!------------------------------home page-------------------------------------------->
+        
+        
+        
+    <div id="home" class="item">
+      <a name="home"></a>
+      <div class="content">
+              <img src="images/portrait.png" title="Brock Beldham Portrait" />
+                <!--<img src="images/title.png" title="Brock Beldham Title" id="title" />-->
+                <p id="p1" class="cms-editable">Growing up in a small town of 3,000, it would have been more likely that Brock would have had a knack for metal working or farming. Something about the small town life sparked an artistic flame in his life.</p>
+        <p>Brock decided to pursue Visual and Creative Arts at Sheridan College. Although he enjoyed design elements he wanted to gain a better understanding of the technical side of websites and flash application.  So he enrolled in Interactive Multimedia at Sheridan College</p>
+        <p>Now he not only enjoys designing print applications and websites, but coding and programming them too. Fluent in client side languages, Brock strives to create new and dynamic websites and applications to advance Canadian Interactive Multimedia culture.</p>
+        <h1 style="text-align:right; margin-right:20px"><a href="#item_1" class="panel">Take a look at my work>></a></h1>
+      </div>
+    </div>
+    
+        
+        
+        <!------------------------------Almost Naked Animals WD-------------------------------------------->
+        
+        
+        
+    <div id="item_1" class="item">
+      <a name="item_1"></a>
+      <div class="content">
+                <img src="images/webDesign.png" title="Brock Beldham Web Design" class="header" />
+                <img src="images/almostNakedAnimals.gif" title="Almost Naked Animals" class="samplePic" />
+                <img src="images/html.jpg" title="HTML" class="tag" />
+                <img src="images/css.jpg" title="CSS" class="tag" />
+                <img src="images/photoshop.jpg" title="Photoshop" class="tag" />
+                <img src="images/flash.jpg" title="Flash" class="tag" />
+                <p style="margin:10px 0px 0px 0px;">9 Story Entertainment needed a website designed for their kids television show "Almost Naked Animals".  The website required flash animations, but also to be compatible with Internet Explorer, iPhones and iTouchs.  My Role in this project was Creative Director which included wireframe, flowchart, website design and all Flash animations.</p>
+              <h1 style="text-align:right; margin:0px;">
+                <a href="http://www.almostnakedanimals.com/INTL/index.html" target="_blank">Open Project</a>
+              </h1>
+              <div class="nav">
+                <a href="#home" class="panel"><img src="images/left.png" class="left" /></a>
+                <a href="#home" class="panel"><img src="images/home.png" class="home" /></a>
+                <a href="#item_2" class="panel"><img src="images/right.png" class="right" /></a>
+              </div>
+            </div>
+    </div>
+    
+        
+        
+        <!------------------------------SlideJar GD-------------------------------------------->
+        
+        
+        
+    <div id="item_2" class="item">
+      <a name="item_2"></a>
+      <div class="content">
+              <img src="images/graphicDesign.png" title="Brock Beldham Graphic Design" class="header" />
+                <img src="images/slideJar.gif" title="slideJar" class="samplePic" />
+                <img src="images/photoshop.jpg" title="Photoshop" class="tag" />
+                <img src="images/illustrator.jpg" title="Illustrator" class="tag" />
+                <p style="margin:10px 0px 0px 0px;">SlideJar is a cloud based slide sharing service. Each user's cloud account was viewed as a "Jar", therefore slides would spill out if knocked over. Orange was used as a colour to reference Microsoft Powerpoint's brand and blue was natural not only as a complimentary colour, but as a colour that evokes an intellectual emotion.</p>
+              <h1 style="text-align:right; margin:0px;">
+                  <a class="preview" href="images/preview/slideJar.jpg">Open Project</a>
+              </h1>
+              <div class="nav">
+                  <a href="#item_1" class="panel"><img src="images/left.png" class="left" /></a>
+                  <a href="#home" class="panel"><img src="images/home.png" class="home" /></a>
+                  <a href="#item_3" class="panel"><img src="images/right.png" class="right" /></a>
+              </div>
+            </div>
+    </div>
+    
+        
+        
+        <!------------------------------Private Cloud Computing AE-------------------------------------------->
+        
+        
+        
+    <div id="item_3" class="item">
+      <a name="item_3"></a>
+      <div class="content">
+              <img src="images/videoDesign.png" title="Brock Beldham Video Design" class="header" />
+              <img src="images/privateCloud.gif" title="Private Cloud Computing" class="samplePic" />
+                <img src="images/afterEffects.jpg" title="After Effects" class="tag" />
+                <p style="margin:10px 0px 0px 0px;">As part of a promotional video for a product called Anan, a small infographic was adapted into a short video.  This video displayed statistics about private cloud computing to enhance the value of using the product Anan.</p>
+        <h1 style="text-align:right; margin:0px;">
+                  <a href="#Youtube" class="panel">Open Project</a>
+                </h1>
+                <div class="nav">
+                    <a href="#item_2" class="panel"><img src="images/left.png" class="left" /></a>
+                    <a href="#home" class="panel"><img src="images/home.png" class="home" /></a>
+                    <a href="#item_4" class="panel"><img src="images/right.png" class="right" /></a>
+                </div>
+            </div>
+    </div>
+    
+        
+        
+        <!------------------------------anan cloud WD-------------------------------------------->
+        
+        
+        
+    <div id="item_4" class="item">
+      <a name="item_4"></a>
+      <div class="content"> 
+              <img src="images/webDesign.png" title="Brock Beldham Responsive Website Design" class="header" />
+                <img src="images/ananCloud.gif" title="Anan Cloud" class="samplePic" />
+                <img src="images/photoshop.jpg" title="Photoshop" class="tag" />
+                <img src="images/html.jpg" title="HTML" class="tag" />
+                <img src="images/css.jpg" title="CSS" class="tag" />
+                <img src="images/jquery.jpg" title="jQuery" class="tag" />
+                <img src="images/responsiveDesign.jpg" title="Responsive Design" class="tag" />
+                <p style="margin:10px 0px 0px 0px;">Converted a conventional website into a responsive design website, along with building the clickable slider feature.</p>
+                <h1 style="text-align:right; margin-right:30px; margin-top:10px;">
+                  <a href="http://www.anancloud.com" target="_blank">Open Project</a>
+                </h1>
+                <div class="nav">
+                    <a href="#item_3" class="panel"><img src="images/left.png" class="left" /></a>
+                    <a href="#home" class="panel"><img src="images/home.png" class="home" /></a>
+                    <a href="#item_5" class="panel"><img src="images/right.png" class="right" /></a>
+                </div>
+            </div>
+    </div>
+        
+        
+        
+        <!------------------------------Parallax-------------------------------------------->
+        
+        
+        
+    <div id="item_5" class="item">
+      <a name="item_5"></a>
+      <div class="content">
+              <img src="images/flash.png" title="Brock Beldham Flash Design" class="header" />
+                <img src="images/buildForce.gif" title="Parallax" class="samplePic" />
+                <img src="images/photoshop.jpg" title="Photoshop" class="tag" />
+                <img src="images/html.jpg" title="HTML" class="tag" />
+                <img src="images/css.jpg" title="CSS" class="tag" />
+                <img src="images/jquery.jpg" title="jQuery" class="tag" />
+                <img src="images/responsiveDesign.jpg" title="Responsive Design" class="tag" />
+                <p style="margin:10px 0px 0px 0px;">The Client, BuildForce, wanted to create an eLearning module that was made without flash, cross browser and mobile ready. The module was responsively designed in order to work on all platforms including PC, Tablet and Mobile.</p>
+                <h1 style="text-align:right; margin:0px;">
+                  <a class="preview" href="images/preview/buildForce.jpg">Open Project</a>
+                </h1>
+                <div class="nav">
+                    <a href="#item_4" class="panel"><img src="images/left.png" class="left" /></a>
+                    <a href="#home" class="panel"><img src="images/home.png" class="home" /></a>
+                    <a href="#item_6" class="panel"><img src="images/right.png" class="right" /></a>
+                </div>
+            </div>  
+    </div>
+        
+        
+        
+        <!------------------------------contact page-------------------------------------------->
+        
+        
+        
+    <div id="item_6" class="item">
+      <a name="item_6"></a>
+      <div class="content">
+              <img src="images/contact.png" title="Brock Beldham Contact Page" class="header" />
+                <br />
+              <p>Brock Beldham is a young designer living in Toronto, Ontario, hates the commute, and may be able to help you with small design and development projects.  This site is a showcase of his freelance and college work as a web designer, developer, animator and artist.</p>
+                <p>He has a passion for designing graphics, websites, animation and anything else.  After just graduating Interactive Multimedia, Brock now tries to involve new forms of media into every project he does.  If you would like to contact Brock, feel free to either call <span style="color:#80c7b5; font-weight:bold;">(226) 791 - 1524</span> or e-mail <a href="mailto:brock.beldham@gmail.com?Subject=Online Portfolio"><span style="color:#80c7b5; font-weight:bold;">brock.beldham@gmail.com</span></a></p>
+                <p style="font-weight:bold;">Lots of Experience with:</p>
+                <img src="images/photoshop.jpg" title="Photoshop" class="tag" />
+                <img src="images/illustrator.jpg" title="Illustrator" class="tag" />
+                <img src="images/html.jpg" title="HTML" class="tag" />
+                <img src="images/css.jpg" title="CSS" class="tag" />
+                <img src="images/jquery.jpg" title="Jquery" class="tag" />
+                <img src="images/mobileWeb.jpg" title="Mobile Websites" class="tag" />
+                <img src="images/responsiveDesign.jpg" title="Responsive Design" class="tag" />
+                <p style="font-weight:bold;">Some Knowledge of:</p>
+                <img src="images/afterEffects.jpg" title="After Effects" class="tag" />
+                <img src="images/flash.jpg" title="Flash" class="tag" />
+                 <img src="images/actionScript.jpg" title="ActionScript" class="tag" />
+                <div class="nav">
+                    <a href="#item_5" class="panel"><img src="images/left.png" class="left" /></a>
+                    <a href="#home" class="panel"><img src="images/home.png" class="home" /></a>
+                    <a href="#home" class="panel"><img src="images/right.png" class="right" /></a>
+                </div>
+            </div>
+    </div>
+        
+         
+        
+        
+        <!------------------------------Spacer2-------------------------------------------->
+        
+        
+        
+    <div id="spacer2" class="item">
+      <a name="spacer2"></a>
+      <div class="content">
+              <img src="images/marvel.png" title="Marvel Heroes" />
+            </div>
+    </div>
+        
+        
+        
+        <!------------------------------Remember The Titans Youtube-------------------------------------------->
+        
+        
+        
+    <div id="Youtube" class="item">
+        
+      <a name="Youtube"></a>
+      <div class="contentVid">
+      	     <object width="500" height="305"><param name="movie" value="http://www.youtube.com/v/XTPAnKN9GS8?hl=en_GB&amp;version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/XTPAnKN9GS8?hl=en_GB&amp;version=3" type="application/x-shockwave-flash" width="500" height="305" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+             <!--<object style="height: 305px; width: 500px"><param name="movie" value="http://www.youtube.com/v/J_Xcgg41wTA?version=3"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://www.youtube.com/v/J_Xcgg41wTA?version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="500" height="305" /></object>-->
+                <div class="navVid">
+                    <a href="#titans" class="panel"><img src="images/left.png" class="left" /></a>
+                </div>
+            </div>
+            
+    </div>
+        
+        
+
+        
+        <!------------------------------Spacer1-------------------------------------------->
+        
+        
+        
+    <div id="spacer1" class="item">
+        
+      <a name="spacer1"></a>
+      <div class="content">
+              <img src="images/toronto.png" title="Toronto Maple Leafs" />
+            </div>
+            
+    </div>
+        
+        
+        
+        <!------------------------------Parallax Full-------------------------------------------->
+        
+        
+        
+    <div id="parallaxFull" class="item">
+        
+      <a name="parallaxFull"></a>
+      <div class="contentF">
+             <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="55%" id="FlashID" title="Planetarium">
+                 <param name="movie" value="images/preview/parallax.swf">
+                 <param name="quality" value="high">
+                 <param name="wmode" value="opaque">
+                 <param name="swfversion" value="6.0.65.0">
+                 <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+                 <param name="expressinstall" value="Scripts/expressInstall.swf">
+                 <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                 <!--[if !IE]>-->
+                 <object type="application/x-shockwave-flash" data="images/preview/parallax.swf" width="100%" height="55%">
+                   <!--<![endif]-->
+                   <param name="quality" value="high">
+                   <param name="wmode" value="opaque">
+                   <param name="swfversion" value="6.0.65.0">
+                   <param name="expressinstall" value="Scripts/expressInstall.swf">
+                   <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                   <div>
+                     <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                     <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" width="112" height="33" /></a></p>
+                   </div>
+                   <!--[if !IE]>-->
+               </object>
+                 <!--<![endif]-->
+             </object>
+            <div class="navF">
+                <a href="#parallax" class="panel"><img src="images/left.png" class="left" /></a>
+            </div>
+        </div>
+            
+            
+            
+    </div>
+       
+        
+        
+
+  </div>
+</div>
+</div>
+<div id="mobiView">
+    <div id="home" data-role="page" data-theme="a">
+        <div data-role="header" data-position="fixed">
+            <h1>Beldham Design</h1>
+        </div><!-- /header -->
+        <div data-role="content" data-theme="a">
+            <div class="mobiLogo"></div>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#myWork">My Work</a></li>
+                <li><a href="#contactMe">Contact Me</a></li>
+            </ul>  
+        </div><!-- /content -->
+        <div data-role="footer"> 
+      <h4>brock.beldham@gmail.com | 226-791-1524</h4> 
+    </div>
+    </div>
+    <div id="aboutMe" data-role="page" data-theme="a">
+        <div data-role="header">
+      <a href="index.html" data-icon="home">Home</a>
+            <h1>About Brock Beldham</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#myWork">My Work</a></li>
+                    <li><a href="#contactMe">Contact Me</a></li>
+                </ul>
+            </div>
+        </div><!-- /header -->
+        <div class="mobi" data-role="content" data-theme="a">
+            <img src="images/portrait.png" title="Brock Beldham Portrait" />
+            <p>Growing up in a small town of 2,000, it would have been more likely that Brock would have had a knack for metal working or farming. Something about the small town life sparked an artistic flame in his life.</p>
+      <p>Brock decided to pursue Visual and Creative Arts at Sheridan College. Although he enjoyed design elements he wanted to gain a better understanding of the technical side of websites and flash application.  So he enrolled in Interactive Multimedia at Sheridan College</p>
+      <p>Now he not only enjoys designing print applications and websites, but coding and programming them too. Fluent in client side languages and server side languages, Brock strives to create new and dynamic websites and applications to advance Canadian Interactive Multimedia culture.</p>  
+        </div><!-- /content -->
+        <div data-role="footer" data-position="fixed"> 
+      <h4>brock.beldham@gmail.com | 226-791-1524</h4> 
+    </div>
+    </div>
+    <div id="myWork" data-role="page" data-theme="a">
+        <div data-role="header" data-position="fixed">
+      <a href="index.html" data-icon="home">Home</a>
+            <h1>Brock's Work</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#myWork">My Work</a></li>
+                    <li><a href="#contactMe">Contact Me</a></li>
+                </ul>
+            </div>
+        </div><!-- /header -->
+        <div data-role="content" data-theme="a">
+            <div data-role="collapsible-set">
+                <div class="mobi" data-role="collapsible" data-collapsed="false">
+                    <h3>Web Design</h3>
+                   <img src="images/webDesign.png" title="Brock Beldham Web Design" class="header" />
+                  <img src="images/almostNakedAnimals.gif" title="Almost Naked Animals" class="samplePic" />
+                    <p>9 Story Entertainment needed a website designed for their kids television show "Almost Naked Animals".  The website required flash animations, but also to be compatible with Internet Explorer, iPhones and iTouchs.  My Role in this project was Creative Director which included wireframe, flowchart, website design and all Flash animations.</p>
+                    <h1 style="text-align:right;">
+                    <a href="http://www.almostnakedanimals.com/INTL/index.html" target="_blank">Open Project</a>
+                  </h1>
+                </div>
+                <div class="mobi" data-role="collapsible">
+                    <h3>Graphic Design</h3>
+                <img src="images/graphicDesign.png" title="Brock Beldham Graphic Design" class="header" />
+                    <img src="images/iStorIT.gif" title="iStorIT" class="samplePic" />
+                    <p style="margin:10px 0px 0px 0px;">iStorIT, a Dell Enterprise hardware distributor, needed a logo designed for their company.  The idea was to incorporate Dell logo colours, but the Lime Green gave them their own identity seperate of Dell.  The checkerboard pattern was a visual metaphor for taking a broken, chaotic mess and organizing it into a usable solution.</p>
+                  <h1 style="text-align:right;">
+                    <a class="preview" href="images/preview/iStorIT.jpg">Open Project</a>
+                  </h1>
+                </div>
+                <div class="mobi" data-role="collapsible">
+                    <h3>Video Design</h3>
+                <img src="images/videoDesign.png" title="Brock Beldham Video Design" class="header" />
+                    <img src="images/rememberTitans.gif" title="Remember The Titans" class="samplePic" />
+                    <p style="margin:10px 0px 0px 0px;">As part of a class final project in Interactive Multimedia, students were required to make a video from After Effects.  I have a large interest in Kinetic Motion Typography and believed it to be a great representation of my abilities in After Effects.  It is designed with a scene from the movie "Remember The Titans".</p>
+          <h1 style="text-align:right;">
+                    <a href="youtubeLink" class="panel" target="_blank">Open Project</a>
+                  </h1>
+                </div>
+                <div class="mobi" data-role="collapsible">
+                    <h3>Web Design</h3>
+                <img src="images/webDesign.png" title="Brock Beldham Responsive Website Design" class="header" />
+                    <img src="images/ananCloud.gif" title="Anan Cloud" class="samplePic" />
+                    <p style="margin:10px 0px 0px 0px;">Anancloud.com was a standard fixed positioned website. I Converted the website into responsive design that snaped to a tablet view and a smart phone view.  I also created the slide widget on the home page.</p>
+                <h1 style="text-align:right;">
+                  <a href="http://www.anancloud.com" target="_blank">Open Project</a>
+                </h1>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed"> 
+      <h4>brock.beldham@gmail.com | 226-791-1524</h4> 
+    </div>
+    </div>
+    <div id="contactMe" data-role="page" data-theme="a">
+        <div data-role="header" data-position="fixed">
+      <a href="index.html" data-icon="home">Home</a>
+            <h1>Contact Brock</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#myWork">My Work</a></li>
+                    <li><a href="#contactMe">Contact Me</a></li>
+                </ul>
+            </div>
+        </div><!-- /header -->
+        <div class="mobi" data-role="content" data-theme="a">
+            <img src="images/contact.png" title="Brock Beldham Contact Page" class="header" />
+            <br />
+            <p>Brock Beldham is a young designer living in Toronto, Ontario, hates the commute, and may be able to help you with small design and development projects.  This site is a showcase of his freelance and college work as a web designer, developer, animator and artist.</p>
+            <p>He has a passion for designing graphics, websites, animation and anything else.  After just graduating Interactive Multimedia, Brock now tries to involve new forms of media into every project he does.  If you would like to contact Brock, feel free to either call <span style="color:#80c7b5; font-weight:bold;">(226) 791 - 1524</span> or e-mail <a href="mailto:brock.beldham@gmail.com?Subject=Online Portfolio"><span style="color:#80c7b5; font-weight:bold;">brock.beldham@gmail.com</span></a></p>
+            <p style="font-weight:bold;">Lots of Experience with:</p>
+            <img src="images/photoshop.jpg" title="Photoshop" class="tag" />
+            <img src="images/illustrator.jpg" title="Illustrator" class="tag" />
+            <img src="images/html.jpg" title="HTML" class="tag" />
+            <img src="images/css.jpg" title="CSS" class="tag" />
+            <img src="images/jquery.jpg" title="Jquery" class="tag" />
+            <img src="images/mobileWeb.jpg" title="Mobile Websites" class="tag" />
+            <img src="images/responsiveDesign.jpg" title="Responsive Design" class="tag" />
+            <img src="images/afterEffects.jpg" title="After Effects" class="tag" />
+            <p style="font-weight:bold;">Some Knowledge of:</p>
+            <img src="images/flash.jpg" title="Flash" class="tag" />
+            <img src="images/actionScript.jpg" title="ActionScript" class="tag" />
+            <img src="images/php.jpg" title="PHP" class="tag" />
+            <p style="font-weight:bold;">Experimented With:</p>
+            <img src="images/mobileApp.jpg" title="Mobile Flash Applications" class="tag" />
+            <img src="images/gestureTech.jpg" title="Gesture Based Technology" class="tag" />
+        </div>
+        <div data-role="footer" data-position="fixed"> 
+      <h4>brock.beldham@gmail.com | 226-791-1524</h4> 
+    </div>
+    </div>
+</div>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+</script>
+</body>
+</html>
