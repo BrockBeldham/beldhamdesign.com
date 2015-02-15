@@ -1,0 +1,23 @@
+{
+    "name": "beldhamdesign.com",
+    "title": "Beldham Design",
+    "version": "0.1.0",
+    "homepage": "",
+    "author": {
+        "name": "BrockBeldham",
+        "url": "http://www.beldhamdesign.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BrockBeldham/beldhamdesign.com"
+    },
+    "devDependencies": {
+        "bower": "*",
+        "grunt": "~0.4.1",
+        "grunt-contrib-less": "~0.5.0",
+        "grunt-contrib-uglify": "~0.1.1",
+        "grunt-contrib-jshint": "~0.1.1",
+        "grunt-contrib-clean": "~0.4.0",
+        "grunt-contrib-watch": "~0.4.4"
+    }
+}
