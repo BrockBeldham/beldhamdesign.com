@@ -1,0 +1,185 @@
+@import "../settings.less";
+
+
+// TYPOGRAPHY
+// ==========
+
+html, body {
+}
+
+html {
+}
+
+body {
+}
+
+
+// Header
+// -------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+h1, h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+// Inline and Text Blocks
+// -------------------------------------------------
+
+p {
+}
+
+em {
+}
+
+
+// Anchors
+// -------------------------------------------------
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+// Images
+// ---------------------------------------------------
+
+img {
+    max-width: 100%;
+}
+
+// --- Forms -----------------------------------------
+label {
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 2px;
+    width: 100%;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+select,
+textarea {
+    .boxSizing();
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=email] {
+    padding: 5px 10px;
+    border: 3px solid @black;
+    height: 50px;
+    color: @black;
+}
+
+//checkbox is 'invisible', but still tabable
+input[type="checkbox"] {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    .opacity(0);
+
+    //the label is actually out clickable object because of the 'for' attr
+    & + label {
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        position: relative;
+
+        //the :before object is the 'checkbox' that we see
+        &:before {
+            .boxSizing();
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background: #fff;
+            margin-right: 20px;
+            content: ' ';
+            vertical-align: middle;
+            position: absolute;
+            left: 0;
+            top: -7px;
+        }
+    }
+
+    //checked styles
+    &:checked + label:before {
+        background: url() center no-repeat #fff;
+    }
+
+    //shadow for accessabilty focus
+    &:focus + label:before {
+        .boxShadow(0 0 10px 0 rgba(0,0,0,0.8));
+    }
+}
+
+.frm-select {
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    border: 3px solid @black;
+
+    .frm-select-btn {
+        width: 50px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        .frm-select-btn-triangle {
+            width: 0px;
+            height: 0px;
+            border-style: solid;
+            border-width: 10px 10px 0px;
+            border-color: @black transparent transparent;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -3px;
+            margin-left: -8px;
+        }
+    }
+
+    select {
+        .boxSizing();
+        border: 0;
+        height: 44px;
+        width: 125%;
+        padding: 5px 10px;
+        font-size: 24px;
+        color: @black;
+        cursor: pointer;
+        text-indent: 0.01px;
+        z-index: 1;
+        position: relative;
+        background: transparent;
+    }
+}
