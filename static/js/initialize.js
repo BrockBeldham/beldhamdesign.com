@@ -49,7 +49,7 @@
         });
 
         new MyRouter();
-        Backbone.history.start();
+        Backbone.history.start({ pushState: true });
     };
 
     Core.prototype._openPage = function (pageId) {
