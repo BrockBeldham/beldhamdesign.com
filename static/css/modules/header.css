@@ -1,0 +1,31 @@
+.hdr {
+  padding: 20px 40px;
+  overflow: hidden;
+}
+.hdr .logo {
+  float: left;
+}
+.hdr .logo-link {
+  display: inline;
+}
+.hdr .logo-link:before {
+  display: none;
+}
+.hdr .logo-image {
+  float: left;
+}
+.hdr .logo-details {
+  padding-left: 135px;
+}
+.nav {
+  float: right;
+}
+.nav .nav-list-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+.nav .nav-link {
+  padding: 5px 2px;
+  font-size: 24px;
+}

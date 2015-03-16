@@ -21,6 +21,8 @@
     <link href="/static/css/base/base.css" rel="stylesheet" />
     <link href="/static/css/base/layout.css" rel="stylesheet" />
     <!-- Modules -->
+    <link href="/static/css/modules/header.css" rel="stylesheet" />
+    <link href="/static/css/modules/home.css" rel="stylesheet" />
     <!-- States -->
     <link href="/static/css/states/state.css" rel="stylesheet" />
 
@@ -28,16 +30,20 @@
 <body class="portfolio">
     <header class="hdr">
         <div class="logo">
-            <a href="/"><img src="/static/img/logo.png"></a>
+            <a href="/" class="logo-link">
+                <img src="/static/img/logo.png" class="logo-image">
+            </a>
             <ul class="logo-details">
-                <li class="logo-name">
+                <li>
                     <h1>Brock Beldham</h1>
                 </li>
-                <li class="logo-position">Interactive Designer</li>
+                <li>
+                    <h4>Interactive Designer</h4>
+                </li>
             </ul>
         </div>
         <nav class="nav">
-            <ul class="nav-list">
+            <ul>
                 <li class="nav-list-item">
                     <a href="/work" class="nav-link">Work</a>
                 </li>
@@ -54,29 +60,23 @@
     <div class="wrapper">
         <section id="home" class="container">
             <div class="home">
-                <h3>Lorem ipsum dolor sit amet consectetur, adipiscing, sed eiusmod. tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h3>
-                <ul class="icon-list">
-                    <li class="icon-list-item">
-                        <i class="fa fa-envelope"></i>
-                    </li>
-                    <li class="icon-list-item">
-                        <i class="fa fa-facebook"></i>
-                    </li>
-                    <li class="icon-list-item">
-                        <i class="fa fa-twitter"></i>
-                    </li>
-                    <li class="icon-list-item">
-                        <i class="fa fa-github"></i>
-                    </li>
-                    <li class="icon-list-item">
-                        <i class="fa fa-linkedin"></i>
-                    </li>
-                </ul>
+                <h3>Lorem ipsum dolor sit amet <strong>consectetur</strong>, <strong>adipiscing</strong>, <strong>sed eiusmod</strong>. tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h3>
+                <div class="icon-list">
+                    <i class="fa fa-envelope"></i>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-github"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
             </div>
         </section>
     
         <section id="work" class="container">
             <h1>WORK</h1>
+        </section>
+    
+        <section id="about" class="container">
+            <h1>ABOUT</h1>
         </section>
     
         <section id="contact" class="container">

@@ -10,13 +10,14 @@ html, body {
 
 html {
     font-size: @font_size;
-    .defaultFont();
+    #default-font.light();
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
 
 body {
     color: @color_default;
+    background-color: @light_grey;
     overflow-x: hidden;
 }
 
@@ -27,13 +28,23 @@ body {
 h1, h2, h3, h4, h5, h6 {
 }
 
-h1, h2 {
+h1 {
+    font-size: 72px;
+    line-height: 0.7em;
+    #default-font.hairline();
+    margin-bottom: 5px;
+}
+
+h2 {
 }
 
 h3 {
+    font-size: 48px;
 }
 
 h4 {
+    font-size: 36px;
+    margin-left: 5px;
 }
 
 h5 {
@@ -53,13 +64,35 @@ em {
 // -------------------------------------------------
 
 a {
+    display: inline-block;
     text-decoration: none;
     cursor: pointer;
+    color: @color_default;
+    .transition(all 0.25s ease);
+    position: relative;
 
     &:hover,
     &:active,
     &:focus {
-        text-decoration: underline;
+        text-decoration: none;
+        color: @blue;
+
+        &:before {
+            height: 5px;
+            background-color: @blue;
+        }
+    }
+
+    &:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0;
+        background-color: @color_default;
+        .transition(all 0.1s ease);
     }
 }
 

@@ -5,21 +5,65 @@ body {
 html {
   font-size: 16px;
   font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 300;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 body {
   color: #182232;
+  background-color: #e2e2e2;
   overflow-x: hidden;
 }
+h1 {
+  font-size: 72px;
+  line-height: 0.7em;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+h3 {
+  font-size: 48px;
+}
+h4 {
+  font-size: 36px;
+  margin-left: 5px;
+}
 a {
+  display: inline-block;
   text-decoration: none;
   cursor: pointer;
+  color: #182232;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  position: relative;
 }
 a:hover,
 a:active,
 a:focus {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #3c76d4;
+}
+a:hover:before,
+a:active:before,
+a:focus:before {
+  height: 5px;
+  background-color: #3c76d4;
+}
+a:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: #182232;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 img {
   max-width: 100%;
