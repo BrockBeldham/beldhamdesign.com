@@ -5,12 +5,19 @@
 // ==========
 
 html, body {
+    height: 100%;
 }
 
 html {
+    font-size: @font_size;
+    .defaultFont();
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 body {
+    color: @color_default;
+    overflow-x: hidden;
 }
 
 

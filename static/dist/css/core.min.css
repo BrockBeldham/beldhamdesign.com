@@ -129,6 +129,20 @@ sub {
   bottom: -0.25em;
 }
 
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 16px;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  color: #182232;
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
   cursor: pointer;

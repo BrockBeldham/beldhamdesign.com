@@ -13,7 +13,14 @@
             selectors: {
                 homePage: '#home',
                 workPage: '#work',
+                aboutPage: '#about',
                 contactPage: '#contact'
+            },
+            routes: {
+                home: 'home',
+                work: 'work',
+                about: 'about',
+                contact: 'contact'
             }
         };
 
@@ -23,28 +30,36 @@
     };
 
     Core.prototype._initialize = function () {
+        console.log("%cYou didn't need to tear apart my website with dev tools...you could have just asked. The github repo is right here: %chttps://github.com/BrockBeldham/beldhamdesign.com", "color: #182232; font-family: 'Lato'; font-size: 18px;", "color: #3C76D4; font-style: bold; font-family: 'Lato'; font-size: 18px;");
         this._initRouter();
     };
 
     Core.prototype._initRouter = function () {
         var that = this;
+        var selectors = this.config.selectors;
+        var routes = this.config.routes;
         var MyRouter = Backbone.Router.extend({
             routes: {
-                ""        : "home",
-                "work"    : "work",
-                "contact" : "contact"
+                ""        : routes.home,
+                "work"    : routes.work,
+                "about"   : routes.about,
+                "contact" : routes.contact
             },
         
             home: function() {
-                that._openPage('#home');
+                that._openPage(selectors.homePage);
             },
         
             work: function() {
-                that._openPage('#work');
+                that._openPage(selectors.workPage);
+            },
+        
+            about: function() {
+                that._openPage(selectors.aboutPage);
             },
         
             contact: function() {
-                that._openPage('#contact');
+                that._openPage(selectors.contactPage);
             }
         });
 
