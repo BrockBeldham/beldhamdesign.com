@@ -1,4 +1,16 @@
 .container {
   display: none;
-  padding: 20px 40px;
+  height: 100%;
+  width: 100%;
+  padding: 178px 40px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #e2e2e2;
+  position: absolute;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: #333333;
 }

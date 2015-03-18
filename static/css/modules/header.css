@@ -1,6 +1,12 @@
 .hdr {
   padding: 20px 40px;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #e2e2e2;
+  z-index: 99;
 }
 .hdr .logo {
   float: left;

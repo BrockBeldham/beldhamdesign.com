@@ -14,7 +14,8 @@
                 homePage: '#home',
                 workPage: '#work',
                 aboutPage: '#about',
-                contactPage: '#contact'
+                contactPage: '#contact',
+                navLink: '[data-nav-link]'
             },
             routes: {
                 home: 'home',
@@ -24,14 +25,23 @@
             }
         };
 
-        this.config         = $.extend(true, defaults, options || { });
+        this.config = $.extend(true, defaults, options || { });
 
         this._initialize();
     };
 
     Core.prototype._initialize = function () {
         console.log("%cYou didn't need to tear apart my website with dev tools...you could have just asked. The github repo is right here: %chttps://github.com/BrockBeldham/beldhamdesign.com", "color: #182232; font-family: 'Lato'; font-size: 18px;", "color: #3C76D4; font-style: bold; font-family: 'Lato'; font-size: 18px;");
+        this._initNav();
         this._initRouter();
+    };
+
+    Core.prototype._initNav = function () {
+        var $navLink = $(this.config.selectors.navLink);
+        $navLink.on('click', function(event) {
+            event.preventDefault();
+            Backbone.history.navigate(event.target.pathname, {trigger: true});
+        });
     };
 
     Core.prototype._initRouter = function () {
@@ -68,8 +78,17 @@
     };
 
     Core.prototype._openPage = function (pageId) {
-        $(".container").hide();
-        $(pageId).show();
+        if ($(".container").hasClass('active-page')) {
+            $(".container").removeClass('active-page');
+            $(pageId).addClass('active-page');
+            $(".container").hide();
+            $(pageId).show();
+        } else {
+            console.log('externally accessed link');
+            $(pageId).addClass('active-page');
+            $(".container").hide();
+            $(pageId).show();
+        }
     };
 
     // Auto instantiate

@@ -142,7 +142,7 @@ html {
 }
 body {
   color: #182232;
-  background-color: #e2e2e2;
+  background-color: #333333;
   overflow-x: hidden;
 }
 h1 {
@@ -313,12 +313,30 @@ input[type="checkbox"]:focus + label:before {
 
 .container {
   display: none;
-  padding: 20px 40px;
+  height: 100%;
+  width: 100%;
+  padding: 178px 40px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #e2e2e2;
+  position: absolute;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: #333333;
 }
 
 .hdr {
   padding: 20px 40px;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #e2e2e2;
+  z-index: 99;
 }
 .hdr .logo {
   float: left;
@@ -349,7 +367,7 @@ input[type="checkbox"]:focus + label:before {
 }
 
 .home {
-  margin: 50px;
+  margin: 0 50px;
   text-align: center;
 }
 .home h3 {
