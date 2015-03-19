@@ -15,7 +15,8 @@
                 workPage: '#work',
                 aboutPage: '#about',
                 contactPage: '#contact',
-                navLink: '[data-nav-link]'
+                navLink: '[data-nav-link]',
+                container: ".container"
             },
             routes: {
                 home: 'home',
@@ -50,10 +51,10 @@
         var routes = this.config.routes;
         var MyRouter = Backbone.Router.extend({
             routes: {
-                ""        : routes.home,
-                "work"    : routes.work,
-                "about"   : routes.about,
-                "contact" : routes.contact
+                ''      : routes.home,
+                'work'    : routes.work,
+                'about'   : routes.about,
+                'contact' : routes.contact
             },
         
             home: function() {
@@ -78,17 +79,143 @@
     };
 
     Core.prototype._openPage = function (pageId) {
-        if ($(".container").hasClass('active-page')) {
-            $(".container").removeClass('active-page');
-            $(pageId).addClass('active-page');
-            $(".container").hide();
-            $(pageId).show();
+        var $container = $(this.config.selectors.container);
+        var $pageId = $(pageId);
+        var animationNum = this.getRandomNum(1, 5);
+        if ($container.hasClass('active-page')) {
+            switch (animationNum) {
+                case 1:
+                    this._pageTransitionTop($pageId, $container);
+                    break;
+                case 2:
+                    this._pageTransitionRight($pageId, $container);
+                    break;
+                case 3:
+                    this._pageTransitionBottom($pageId, $container);
+                    break;
+                case 4:
+                    this._pageTransitionLeft($pageId, $container);
+                    break;
+            }
         } else {
-            console.log('externally accessed link');
-            $(pageId).addClass('active-page');
-            $(".container").hide();
-            $(pageId).show();
+            $pageId.addClass('active-page');
         }
+    };
+
+    Core.prototype._pageTransitionTop = function ($pageId, $container) {
+        $pageId.css({
+            top: '-100%',
+            zIndex: '3',
+            display: 'block'
+        });
+        $pageId.velocity({
+            top: '0%'
+        },{
+            duration: 700,
+            easing: 'easeOutSine',
+            complete: function(element) {
+                $(element).removeAttr('style');
+                $container.removeClass('active-page');
+                $(element).addClass('active-page');
+            }
+        });
+        $('.active-page').velocity({
+            opacity: 0.5
+        },{
+            duration: 700,
+            easing: "easeOutSine",
+            complete: function(element) {
+                $(element).removeAttr('style');
+            }
+        });
+    };
+
+    Core.prototype._pageTransitionRight = function ($pageId, $container) {
+        $pageId.css({
+            left: '-100%',
+            zIndex: '3',
+            display: 'block'
+        });
+        $pageId.velocity({
+            left: '0%'
+        },{
+            duration: 700,
+            easing: 'easeOutSine',
+            complete: function(element) {
+                $(element).removeAttr('style');
+                $container.removeClass('active-page');
+                $(element).addClass('active-page');
+            }
+        });
+        $('.active-page').velocity({
+            opacity: 0.5
+        },{
+            duration: 700,
+            easing: "easeOutSine",
+            complete: function(element) {
+                $(element).removeAttr('style');
+            }
+        });
+    };
+
+    Core.prototype._pageTransitionBottom = function ($pageId, $container) {
+        $pageId.css({
+            bottom: '-100%',
+            zIndex: '3',
+            display: 'block'
+        });
+        $pageId.velocity({
+            bottom: '0%'
+        },{
+            duration: 700,
+            easing: 'easeOutSine',
+            complete: function(element) {
+                $(element).removeAttr('style');
+                $container.removeClass('active-page');
+                $(element).addClass('active-page');
+            }
+        });
+        $('.active-page').velocity({
+            opacity: 0.5
+        },{
+            duration: 700,
+            easing: "easeOutSine",
+            complete: function(element) {
+                $(element).removeAttr('style');
+            }
+        });
+    };
+
+    Core.prototype._pageTransitionLeft = function ($pageId, $container) {
+        $pageId.css({
+            right: '-100%',
+            zIndex: '3',
+            display: 'block'
+        });
+        $pageId.velocity({
+            right: '0%'
+        },{
+            duration: 700,
+            easing: 'easeOutSine',
+            complete: function(element) {
+                $(element).removeAttr('style');
+                $container.removeClass('active-page');
+                $(element).addClass('active-page');
+            }
+        });
+        $('.active-page').velocity({
+            opacity: 0.5
+        },{
+            duration: 700,
+            easing: "easeOutSine",
+            complete: function(element) {
+                $(element).removeAttr('style');
+            }
+        });
+    };
+
+    Core.prototype.getRandomNum = function (min, max) {
+        return Math.floor(Math.random() * (max - min) + min);
     };
 
     // Auto instantiate

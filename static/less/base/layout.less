@@ -1,13 +1,20 @@
 @import "../settings.less";
 
 .container {
-    display: none;
     height: 100%;
     width: 100%;
     padding: 178px 40px 0;
     .boxSizing();
-    background: @light_grey;
     position: absolute;
+    z-index: 1;
+    display: none;
+    background: @light_grey;
+    .boxShadow(0 0 50px 0 rgba(0,0,0,0.7));
+
+    &.active-page {
+        z-index: 2;
+        display: block;
+    }
 }
 
 .wrapper {
