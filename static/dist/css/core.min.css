@@ -322,9 +322,9 @@ input[type="checkbox"]:focus + label:before {
   z-index: 1;
   display: none;
   background: #e2e2e2;
-  -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.7);
-  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 .container.active-page {
   z-index: 2;

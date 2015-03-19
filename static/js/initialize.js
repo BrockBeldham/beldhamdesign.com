@@ -18,6 +18,9 @@
                 navLink: '[data-nav-link]',
                 container: ".container"
             },
+            durations: {
+                pageTransition: 700
+            },
             routes: {
                 home: 'home',
                 work: 'work',
@@ -85,15 +88,19 @@
         if ($container.hasClass('active-page')) {
             switch (animationNum) {
                 case 1:
+                    this._pageTransitionFadeOut($pageId, $container);
                     this._pageTransitionTop($pageId, $container);
                     break;
                 case 2:
+                    this._pageTransitionFadeOut($pageId, $container);
                     this._pageTransitionRight($pageId, $container);
                     break;
                 case 3:
+                    this._pageTransitionFadeOut($pageId, $container);
                     this._pageTransitionBottom($pageId, $container);
                     break;
                 case 4:
+                    this._pageTransitionFadeOut($pageId, $container);
                     this._pageTransitionLeft($pageId, $container);
                     break;
             }
@@ -102,7 +109,22 @@
         }
     };
 
+    Core.prototype._pageTransitionFadeOut = function () {
+        var transitionDuration = this.config.durations.pageTransition;
+        $('.active-page').velocity({
+            opacity: 0.3
+        },{
+            duration: transitionDuration,
+            easing: "easeOutSine",
+            complete: function(element) {
+                $(element).removeAttr('style');
+            }
+        });
+    };
+
     Core.prototype._pageTransitionTop = function ($pageId, $container) {
+        var that = this;
+        var transitionDuration = this.config.durations.pageTransition;
         $pageId.css({
             top: '-100%',
             zIndex: '3',
@@ -111,26 +133,17 @@
         $pageId.velocity({
             top: '0%'
         },{
-            duration: 700,
+            duration: transitionDuration,
             easing: 'easeOutSine',
             complete: function(element) {
-                $(element).removeAttr('style');
-                $container.removeClass('active-page');
-                $(element).addClass('active-page');
-            }
-        });
-        $('.active-page').velocity({
-            opacity: 0.5
-        },{
-            duration: 700,
-            easing: "easeOutSine",
-            complete: function(element) {
-                $(element).removeAttr('style');
+                that._pageTransitionComplete(element, $container);
             }
         });
     };
 
     Core.prototype._pageTransitionRight = function ($pageId, $container) {
+        var that = this;
+        var transitionDuration = this.config.durations.pageTransition;
         $pageId.css({
             left: '-100%',
             zIndex: '3',
@@ -139,26 +152,17 @@
         $pageId.velocity({
             left: '0%'
         },{
-            duration: 700,
+            duration: transitionDuration,
             easing: 'easeOutSine',
             complete: function(element) {
-                $(element).removeAttr('style');
-                $container.removeClass('active-page');
-                $(element).addClass('active-page');
-            }
-        });
-        $('.active-page').velocity({
-            opacity: 0.5
-        },{
-            duration: 700,
-            easing: "easeOutSine",
-            complete: function(element) {
-                $(element).removeAttr('style');
+                that._pageTransitionComplete(element, $container);
             }
         });
     };
 
     Core.prototype._pageTransitionBottom = function ($pageId, $container) {
+        var that = this;
+        var transitionDuration = this.config.durations.pageTransition;
         $pageId.css({
             bottom: '-100%',
             zIndex: '3',
@@ -167,26 +171,17 @@
         $pageId.velocity({
             bottom: '0%'
         },{
-            duration: 700,
+            duration: transitionDuration,
             easing: 'easeOutSine',
             complete: function(element) {
-                $(element).removeAttr('style');
-                $container.removeClass('active-page');
-                $(element).addClass('active-page');
-            }
-        });
-        $('.active-page').velocity({
-            opacity: 0.5
-        },{
-            duration: 700,
-            easing: "easeOutSine",
-            complete: function(element) {
-                $(element).removeAttr('style');
+                that._pageTransitionComplete(element, $container);
             }
         });
     };
 
     Core.prototype._pageTransitionLeft = function ($pageId, $container) {
+        var that = this;
+        var transitionDuration = this.config.durations.pageTransition;
         $pageId.css({
             right: '-100%',
             zIndex: '3',
@@ -195,23 +190,18 @@
         $pageId.velocity({
             right: '0%'
         },{
-            duration: 700,
+            duration: transitionDuration,
             easing: 'easeOutSine',
             complete: function(element) {
-                $(element).removeAttr('style');
-                $container.removeClass('active-page');
-                $(element).addClass('active-page');
+                that._pageTransitionComplete(element, $container);
             }
         });
-        $('.active-page').velocity({
-            opacity: 0.5
-        },{
-            duration: 700,
-            easing: "easeOutSine",
-            complete: function(element) {
-                $(element).removeAttr('style');
-            }
-        });
+    };
+
+    Core.prototype._pageTransitionComplete = function (element, $container) {
+        $(element).removeAttr('style');
+        $container.removeClass('active-page');
+        $(element).addClass('active-page');
     };
 
     Core.prototype.getRandomNum = function (min, max) {
