@@ -7,6 +7,9 @@
   margin-bottom: 90px;
   text-shadow: 1px 1px 0px #FFFFFF;
 }
+.home .icon-list a:before {
+  display: none;
+}
 .home .fa {
   width: 60px;
   height: 60px;
