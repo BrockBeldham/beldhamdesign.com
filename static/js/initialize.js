@@ -84,26 +84,9 @@
     Core.prototype._openPage = function (pageId) {
         var $container = $(this.config.selectors.container);
         var $pageId = $(pageId);
-        var animationNum = this.getRandomNum(1, 5);
         if ($container.hasClass('active-page')) {
-            switch (animationNum) {
-                case 1:
-                    this._pageTransitionFadeOut($pageId, $container);
-                    this._pageTransitionTop($pageId, $container);
-                    break;
-                case 2:
-                    this._pageTransitionFadeOut($pageId, $container);
-                    this._pageTransitionRight($pageId, $container);
-                    break;
-                case 3:
-                    this._pageTransitionFadeOut($pageId, $container);
-                    this._pageTransitionBottom($pageId, $container);
-                    break;
-                case 4:
-                    this._pageTransitionFadeOut($pageId, $container);
-                    this._pageTransitionLeft($pageId, $container);
-                    break;
-            }
+            this._pageTransitionFadeOut($pageId, $container);
+            this._pageTransitionTop($pageId, $container);
         } else {
             $pageId.addClass('active-page');
         }
@@ -132,63 +115,6 @@
         });
         $pageId.velocity({
             top: '0%'
-        },{
-            duration: transitionDuration,
-            easing: 'easeOutSine',
-            complete: function(element) {
-                that._pageTransitionComplete(element, $container);
-            }
-        });
-    };
-
-    Core.prototype._pageTransitionRight = function ($pageId, $container) {
-        var that = this;
-        var transitionDuration = this.config.durations.pageTransition;
-        $pageId.css({
-            left: '-100%',
-            zIndex: '3',
-            display: 'block'
-        });
-        $pageId.velocity({
-            left: '0%'
-        },{
-            duration: transitionDuration,
-            easing: 'easeOutSine',
-            complete: function(element) {
-                that._pageTransitionComplete(element, $container);
-            }
-        });
-    };
-
-    Core.prototype._pageTransitionBottom = function ($pageId, $container) {
-        var that = this;
-        var transitionDuration = this.config.durations.pageTransition;
-        $pageId.css({
-            bottom: '-100%',
-            zIndex: '3',
-            display: 'block'
-        });
-        $pageId.velocity({
-            bottom: '0%'
-        },{
-            duration: transitionDuration,
-            easing: 'easeOutSine',
-            complete: function(element) {
-                that._pageTransitionComplete(element, $container);
-            }
-        });
-    };
-
-    Core.prototype._pageTransitionLeft = function ($pageId, $container) {
-        var that = this;
-        var transitionDuration = this.config.durations.pageTransition;
-        $pageId.css({
-            right: '-100%',
-            zIndex: '3',
-            display: 'block'
-        });
-        $pageId.velocity({
-            right: '0%'
         },{
             duration: transitionDuration,
             easing: 'easeOutSine',
