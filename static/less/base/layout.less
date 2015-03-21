@@ -3,13 +3,13 @@
 .container {
     height: 100%;
     width: 100%;
-    padding: 178px 40px 0;
-    .boxSizing();
+    padding: 150px 40px 0;
+    box-sizing: border-box;
     position: absolute;
     z-index: 1;
     display: none;
     background: @light_grey;
-    .boxShadow(0 0 5px 0 rgba(0,0,0,0.3));
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
 
     &.active-page {
         z-index: 2;

@@ -1,0 +1,26 @@
+@import "../settings.less";
+
+.work {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+
+    .work-list-item {
+        width: 30%;
+        margin: 0 -4px 40px 5%;
+        display: inline-block;
+        padding: 20px;
+        background: @blue;
+        border: 1px solid @color_default;
+        box-sizing: border-box;
+        position: relative;
+
+        &:nth-child(3n+1) {
+            margin-left: 0;
+        }
+    }
+
+    .work-overlay {
+        position: absolute;
+    }
+}

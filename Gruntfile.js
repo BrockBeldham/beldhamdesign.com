@@ -38,6 +38,7 @@ module.exports = function(grunt) {
                         // Modules
                         '<%= static_folder %>less/modules/header.less',
                         '<%= static_folder %>less/modules/home.less',
+                        '<%= static_folder %>less/modules/work.less',
 
                         // States
                         '<%= static_folder %>less/states/state.less'
