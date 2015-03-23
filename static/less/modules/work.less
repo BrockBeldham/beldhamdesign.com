@@ -18,9 +18,37 @@
         &:nth-child(3n+1) {
             margin-left: 0;
         }
+
+        &:hover .work-overlay {
+            .opacity(100);
+        }
+
+        img {
+            display: block;
+        }
     }
 
     .work-overlay {
         position: absolute;
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        padding-top: 50%;
+        background: rgba(24, 34, 50, 0.6);
+        .opacity(0);
+        .transition(all 0.2s ease);
+        text-align: center;
+    }
+
+    .fa {
+        font-size: 60px;
+        width: 80px;
+        height: 80px;
+        line-height: 85px;
+        color: @white;
+        background: rgba(24, 34, 50, 0.6);
+        border-radius: 100%;
+        margin: -40px 10px 0;
     }
 }

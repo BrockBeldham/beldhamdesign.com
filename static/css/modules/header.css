@@ -14,9 +14,6 @@
 .hdr .logo-link {
   display: inline;
 }
-.hdr .logo-link:before {
-  display: none;
-}
 .hdr .logo-image {
   float: left;
 }
@@ -34,4 +31,21 @@
 .nav .nav-link {
   padding: 5px 2px;
   font-size: 24px;
+  position: relative;
+}
+.nav .nav-link:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: #182232;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+.nav .nav-link:hover:before {
+  height: 5px;
+  background-color: #3c76d4;
 }

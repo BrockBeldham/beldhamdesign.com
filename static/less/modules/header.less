@@ -16,10 +16,6 @@
 
     .logo-link {
         display: inline;
-    
-        &:before {
-            display: none;
-        }
     }
     
     .logo-image {
@@ -43,5 +39,23 @@
     .nav-link {
         padding: 5px 2px;
         font-size: 24px;
+        position: relative;
+
+        &:before {
+            content: " ";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 0;
+            background-color: @color_default;
+            .transition(all 0.1s ease);
+        }
+
+        &:hover:before {
+            height: 5px;
+            background-color: @blue;
+        }
     }
 }
