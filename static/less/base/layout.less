@@ -8,7 +8,7 @@
     position: absolute;
     z-index: 1;
     display: none;
-    background: @light_grey;
+    background: @bg_grey;
     box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
 
     &.active-page {
@@ -21,4 +21,10 @@
     height: 100%;
     width: 100%;
     background-color: @black;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

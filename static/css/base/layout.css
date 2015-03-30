@@ -18,3 +18,8 @@
   width: 100%;
   background-color: #333333;
 }
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
