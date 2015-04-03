@@ -79,7 +79,7 @@ module.exports = function(grunt) {
                 files: {
                     '<%= static_folder %>dist/js/core.min.js' : [
                         // Components
-                        '<%= static_folder %>js/custom.js'
+                        '<%= static_folder %>js/initialize.js'
                     ]
                 }
             }
@@ -88,36 +88,18 @@ module.exports = function(grunt) {
         watch: {
             gruntfile: {
                 files: 'Gruntfile.js',
-                tasks: 'jshint:gruntfile',
-                options: {
-                    livereload: true
-                }
+                tasks: 'jshint:gruntfile'
             },
             js: {
                 files: '<%= static_folder %>js/**/*.js',
                 tasks: [
                     'clean:js',
                     'uglify'
-                ],
-                options: {
-                    livereload: true
-                }
+                ]
             },
             less: {
                 files: '<%= static_folder %>less/**/*.less',
-                tasks: 'build-css',
-                options: {
-                    livereload: true
-                }
-            },
-            templates: {
-                files: [
-                    'templates/**/*.php',
-                    'preprocessors/**/*.php'
-                ],
-                options: {
-                    livereload: true
-                }
+                tasks: 'build-css'
             }
         }
     });

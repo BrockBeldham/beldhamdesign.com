@@ -74,6 +74,7 @@ hr {
 
 a {
     display: inline-block;
+    position: relative;
     text-decoration: none;
     cursor: pointer;
     color: @color_default;
@@ -84,6 +85,23 @@ a {
     &:focus {
         text-decoration: none;
         color: @blue;
+    }
+
+    &:after {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 1px;
+        background: @black;
+        right: 0;
+        .opacity(100);
+        .transition(all 0.25s ease);
+    }
+
+    &:hover:after {
+        width: 0;
+        .opacity(0);
     }
 }
 

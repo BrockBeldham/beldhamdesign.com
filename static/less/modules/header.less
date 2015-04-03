@@ -1,12 +1,11 @@
 @import "../settings.less";
 
 .hdr {
+    box-sizing: border-box;
     padding: 20px 40px;
     overflow: hidden;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     background: @bg_grey;
     z-index: 99;
 
@@ -56,6 +55,10 @@
         &:hover:before {
             height: 5px;
             background-color: @blue;
+        }
+
+        &:after {
+            display: none;
         }
     }
 }

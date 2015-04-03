@@ -16,7 +16,8 @@
                 aboutPage: '#about',
                 contactPage: '#contact',
                 navLink: '[data-nav-link]',
-                container: ".container"
+                container: '.container',
+                header: '.hdr'
             },
             durations: {
                 pageTransition: 700
@@ -85,31 +86,46 @@
         var $container = $(this.config.selectors.container);
         var $pageId = $(pageId);
         if ($container.hasClass('active-page')) {
-            this._pageTransitionFadeOut($pageId, $container);
-            this._pageTransitionTop($pageId, $container);
+            // internal link
+            this._pageTransitionIn($pageId, $container);
         } else {
+            // external link
             $pageId.addClass('active-page');
         }
     };
 
-    Core.prototype._pageTransitionFadeOut = function () {
+    Core.prototype._pageTransitionIn = function ($pageId, $container) {
         var transitionDuration = this.config.durations.pageTransition;
-        $('.active-page').velocity({
-            opacity: 0.3
+        var that = this
+        var $header = $(this.config.selectors.header);
+
+        $container.velocity({
+            // opacity: 0
+            top: "100%"
         },{
             duration: transitionDuration,
             easing: "easeOutSine",
             complete: function(element) {
-                $(element).removeAttr('style');
+                //$(element).removeAttr('style');
+                setTimeout(function(){
+                    that._pageTransitionOut($pageId, $container, $header, transitionDuration);
+                }, transitionDuration);
             }
+        });
+
+        $header.velocity({
+            top: "-150px"
+        },{
+            duration: transitionDuration,
+            easing: "easeOutSine"
         });
     };
 
-    Core.prototype._pageTransitionTop = function ($pageId, $container) {
+    Core.prototype._pageTransitionOut = function ($pageId, $container, $header, transitionDuration) {
         var that = this;
-        var transitionDuration = this.config.durations.pageTransition;
+
         $pageId.css({
-            top: '-100%',
+            // top: '-100%',
             zIndex: '3',
             display: 'block'
         });
@@ -121,6 +137,13 @@
             complete: function(element) {
                 that._pageTransitionComplete(element, $container);
             }
+        });
+
+        $header.velocity({
+            top: "0"
+        },{
+            duration: transitionDuration,
+            easing: "easeOutSine"
         });
     };
 

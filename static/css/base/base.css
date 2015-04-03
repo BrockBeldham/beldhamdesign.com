@@ -11,7 +11,7 @@ html {
 }
 body {
   color: #182232;
-  background-color: #333333;
+  background-color: #303030;
   overflow-x: hidden;
 }
 h1 {
@@ -44,6 +44,7 @@ hr {
 }
 a {
   display: inline-block;
+  position: relative;
   text-decoration: none;
   cursor: pointer;
   color: #182232;
@@ -55,6 +56,24 @@ a:active,
 a:focus {
   text-decoration: none;
   color: #3c76d4;
+}
+a:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 1px;
+  background: #303030;
+  right: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+a:hover:after {
+  width: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 img {
   max-width: 100%;
@@ -82,9 +101,9 @@ input[type=password],
 input[type=number],
 input[type=email] {
   padding: 5px 10px;
-  border: 3px solid #333333;
+  border: 3px solid #303030;
   height: 50px;
-  color: #333333;
+  color: #303030;
 }
 input[type="checkbox"] {
   position: absolute;
@@ -127,7 +146,7 @@ input[type="checkbox"]:focus + label:before {
   overflow: hidden;
   position: relative;
   background: #fff;
-  border: 3px solid #333333;
+  border: 3px solid #303030;
 }
 .frm-select .frm-select-btn {
   width: 50px;
@@ -141,7 +160,7 @@ input[type="checkbox"]:focus + label:before {
   height: 0px;
   border-style: solid;
   border-width: 10px 10px 0px;
-  border-color: #333333 transparent transparent;
+  border-color: #303030 transparent transparent;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -155,7 +174,7 @@ input[type="checkbox"]:focus + label:before {
   width: 125%;
   padding: 5px 10px;
   font-size: 24px;
-  color: #333333;
+  color: #303030;
   cursor: pointer;
   text-indent: 0.01px;
   z-index: 1;
