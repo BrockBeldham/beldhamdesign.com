@@ -1,0 +1,13 @@
+.logo {
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    left: 20px;
+    width: 25%;
+    opacity: 0.3;
+}
+
+.container {
+    width: 100%;
+    min-height:300px;
+}

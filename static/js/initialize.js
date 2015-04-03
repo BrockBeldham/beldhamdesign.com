@@ -17,7 +17,8 @@
                 contactPage: '#contact',
                 navLink: '[data-nav-link]',
                 container: '.container',
-                header: '.hdr'
+                header: '.hdr',
+                work: '[data-work-info]'
             },
             durations: {
                 pageTransition: 700
@@ -39,6 +40,7 @@
         console.log("%cYou didn't need to tear apart my website with dev tools...you could have just asked. The github repo is right here: %chttps://github.com/BrockBeldham/beldhamdesign.com", "color: #182232; font-family: 'Lato'; font-size: 18px;", "color: #3C76D4; font-style: bold; font-family: 'Lato'; font-size: 18px;");
         this._initNav();
         this._initRouter();
+        this._initWork();
     };
 
     Core.prototype._initNav = function () {
@@ -151,6 +153,17 @@
         $(element).removeAttr('style');
         $container.removeClass('active-page');
         $(element).addClass('active-page');
+    };
+
+    Core.prototype._initWork = function () {
+        var $workItem = $(this.config.selectors.work);
+        var workHandler = _(this._workHandler).bind(this);
+        $workItem.on('click', workHandler);
+    };
+
+    Core.prototype._workHandler = function (event) {
+        event.preventDefault();
+        $(event.target).addClass('view-work');
     };
 
     Core.prototype.getRandomNum = function (min, max) {

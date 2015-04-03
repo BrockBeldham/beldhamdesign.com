@@ -27,15 +27,13 @@ module.exports = function(grunt) {
             production: {
                 files: {
                     '<%= static_folder %>dist/css/core.min.css' : [
-
-                        // Components
-
                         // Base
                         '<%= static_folder %>less/base/reset.less',
                         '<%= static_folder %>less/base/base.less',
                         '<%= static_folder %>less/base/layout.less',
 
                         // Modules
+                        '<%= static_folder %>less/modules/utilities.less',
                         '<%= static_folder %>less/modules/header.less',
                         '<%= static_folder %>less/modules/home.less',
                         '<%= static_folder %>less/modules/work.less',
