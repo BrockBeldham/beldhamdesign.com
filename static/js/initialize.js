@@ -18,7 +18,12 @@
                 navLink: '[data-nav-link]',
                 container: '.container',
                 header: '.hdr',
-                work: '[data-work-info]'
+                work: '[data-work-info]',
+                popClose: '[data-pop-close]',
+                pop: '.pop',
+                popBg: '.pop-bg',
+                popTile: '.pop-bg-tile',
+                popContent: '.pop-content'
             },
             durations: {
                 pageTransition: 700
@@ -102,13 +107,11 @@
         var $header = $(this.config.selectors.header);
 
         $container.velocity({
-            // opacity: 0
             top: "100%"
         },{
             duration: transitionDuration,
             easing: "easeOutSine",
             complete: function(element) {
-                //$(element).removeAttr('style');
                 setTimeout(function(){
                     that._pageTransitionOut($pageId, $container, $header, transitionDuration);
                 }, transitionDuration);
@@ -127,7 +130,6 @@
         var that = this;
 
         $pageId.css({
-            // top: '-100%',
             zIndex: '3',
             display: 'block'
         });
@@ -156,14 +158,36 @@
     };
 
     Core.prototype._initWork = function () {
+        $popTile = $(this.config.selectors.popTile);
+        $pop = $(this.config.selectors.pop);
+        $popContent = $(this.config.selectors.popContent);
+        $popBg = $(this.config.selectors.popBg);
+
+        for(var i=1; i<=100; i++) {
+            var div = document.createElement("div");
+            div.className = 'pop-bg-tile';
+            $popBg.append(div);
+        }
+
         var $workItem = $(this.config.selectors.work);
-        var workHandler = _(this._workHandler).bind(this);
-        $workItem.on('click', workHandler);
+        var workOpenHandler = _(this._handleWorkOpen).bind(this, $pop, $popTile, $popContent);
+        $workItem.on('click', workOpenHandler);
+
+        var $popClose = $(this.config.selectors.popClose);
+        var popCloseHandler = _(this._handlePopClose).bind(this, $pop, $popTile);
+        $popClose.on('click', popCloseHandler);
     };
 
-    Core.prototype._workHandler = function (event) {
+    Core.prototype._handleWorkOpen = function ($pop, $popTile, $popContent, event) {
         event.preventDefault();
-        $(event.target).addClass('view-work');
+
+        $popContent.html('');
+        $pop.addClass('pop-open');
+    };
+
+    Core.prototype._handlePopClose = function ($pop, $popTile, event) {
+        event.preventDefault();
+        $pop.removeClass('pop-open');
     };
 
     Core.prototype.getRandomNum = function (min, max) {
