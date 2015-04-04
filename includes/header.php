@@ -1,6 +1,6 @@
-<header class="hdr">
+<header class="hdr clear-fix">
     <div class="logo">
-        <a href="" class="logo-link" data-nav-link>
+        <a href="/" class="logo-link icon-link" data-nav-link>
             <img src="static/img/logo.png" class="logo-image">
         </a>
         <ul class="logo-details">
@@ -13,16 +13,9 @@
         </ul>
     </div>
     <nav class="nav">
-        <ul>
-            <li class="nav-list-item">
-                <a href="work" class="nav-link" data-nav-link>Work</a>
-            </li>
-            <li class="nav-list-item">
-                <a href="about" class="nav-link" data-nav-link>About</a>
-            </li>
-            <li class="nav-list-item">
-                <a href="contact" class="nav-link" data-nav-link>Contact</a>
-            </li>
-        </ul>
+        <?php include 'nav.php'; ?>
     </nav>
+    <a href="#" class="mobi-nav-btn icon-link">
+        <i class="fa fa-bars"></i>
+    </a>
 </header>

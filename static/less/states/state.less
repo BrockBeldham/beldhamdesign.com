@@ -1,0 +1,17 @@
+@import "../settings.less";
+
+@media screen and (min-width: @layout_sm_desktop_min) and (max-width: @layout_sm_desktop_max) {
+    @import "state.sm-desktop.less";
+}
+
+@media screen and (min-width: @layout_tablet_min) and (max-width: @layout_tablet_max) {
+    @import "state.lg-tablet.less";
+}
+
+@media screen and (min-width: @layout_smtablet_min) and (max-width: @layout_smtablet_max) {
+    @import "state.sm-tablet.less";
+}
+
+@media screen and (max-width: @layout_phone_max) {
+    @import "state.phone.less";
+}

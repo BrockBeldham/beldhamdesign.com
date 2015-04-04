@@ -41,7 +41,7 @@ module.exports = function(grunt) {
 
                         // States
                         '<%= static_folder %>less/states/state.less'
-                    ]
+                        ]
                 }
             },
             development: {

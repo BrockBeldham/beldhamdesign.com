@@ -26,9 +26,8 @@
     <link href="/static/css/modules/home.css" rel="stylesheet" />
     <link href="/static/css/modules/work.css" rel="stylesheet" />
     <link href="/static/css/modules/about.css" rel="stylesheet" />
-    <!-- States -->
+    <!-- Modules -->
     <link href="/static/css/states/state.css" rel="stylesheet" />
-
 </head>
 <body class="portfolio">
     <div class="wrapper">
@@ -43,15 +42,20 @@
 
         <?php include 'includes/contact.php'; ?>
 
-        <div class="pop clear-fix">
-            <div class="pop-bg"></div>
-            <div class="pop-close" data-pop-close>
-                <a href="#" class="icon-link"><i class="fa fa-times"></i></a>
-            </div>
-            <div class="pop-content"></div>
-        </div>
-
     </div>
+
+    <div class="pop clear-fix">
+        <div class="pop-bg"></div>
+        <div class="pop-close" data-pop-close>
+            <a href="#" class="icon-link"><i class="fa fa-times"></i></a>
+        </div>
+        <div class="pop-content"></div>
+    </div>
+    
+    <div class="nav-mobi">
+        <?php include 'includes/nav.php'; ?>
+    </div>
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="/static/components/underscore/underscore.js"></script>
     <script type="text/javascript" src="/static/components/backbone/backbone.js"></script>
