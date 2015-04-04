@@ -513,6 +513,10 @@ input[type="checkbox"]:focus + label:before {
   filter: alpha(opacity=100);
   border-radius: 0;
 }
+.pop.pop-open .pop-content {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .pop .pop-bg {
   position: fixed;
   width: 100%;
@@ -541,6 +545,13 @@ input[type="checkbox"]:focus + label:before {
 }
 .pop .pop-close .fa {
   color: #c6c6c6;
+}
+.pop .pop-content {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  position: relative;
 }
 
 .about {

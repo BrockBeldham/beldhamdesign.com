@@ -86,6 +86,10 @@
             .opacity(100);
             border-radius: 0;
         }
+
+        .pop-content {
+            .opacity(100);
+        }
     }
 
     .pop-bg {
@@ -115,5 +119,11 @@
         .fa {
             color: @grey;
         }
+    }
+
+    .pop-content {
+        .opacity(0);
+        .transition(all 1s ease);
+        position: relative;
     }
 }
