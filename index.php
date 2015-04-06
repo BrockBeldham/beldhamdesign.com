@@ -55,11 +55,11 @@
     <div class="nav-mobi">
         <?php include 'includes/nav.php'; ?>
     </div>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="/static/components/underscore/underscore.js"></script>
+    
+    <script type="text/javascript" src="/static/components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/components/underscore/underscore-min.js"></script>
     <script type="text/javascript" src="/static/components/backbone/backbone.js"></script>
-    <script type="text/javascript" src="/static/components/velocity/velocity.js"></script>
+    <script type="text/javascript" src="/static/components/velocity/velocity.min.js"></script>
     <script type="text/javascript" src="/static/components/modernizr/modernizr.custom.js"></script>
     <script type="text/javascript" src="/static/js/initialize.js"></script>
 </body>
