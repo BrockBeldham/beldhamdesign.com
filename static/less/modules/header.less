@@ -62,11 +62,6 @@
     }
 }
 
-.nav-mobi,
-.mobi-nav-btn {
-    display: none;
-}
-
 @media screen and (min-width: @layout_tablet_min) and (max-width: @layout_tablet_max) {
     .hdr {
         padding: 20px;
@@ -88,6 +83,37 @@
 
         .logo-link {
             display: block;
+            width: 50px;
+        }
+
+        .logo-details {
+            padding-left: 65px;
+        }
+    }
+
+    .nav {
+        .nav-list-item {
+            margin: 0;
+        }
+
+        .nav-link {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: @layout_phone_max) {
+    .hdr {
+        padding: 10px;
+
+        .logo {
+            float: none;
+            width: 290px;
+            margin: 0 auto;
+        }
+
+        .logo-link {
+            display: block;
             width: 60px;
         }
 
@@ -97,171 +123,12 @@
     }
 
     .nav {
-        display: none;
-    }
-
-    .nav-mobi {
-        display: block;
-        width: 150px;
-        margin: 0 auto;
-
-        .nav-list-item {
-            display: block;
-            .translate(0, -20px);
-            .opacity(0);
-            .transition(all 0.5s ease);
-
-            &:nth-child(2) {
-                -webkit-transition-delay: 0.04s;
-                transition-delay: 0.04s;
-            }
-
-            &:nth-child(3) {
-                -webkit-transition-delay: 0.08s;
-                transition-delay: 0.08s;
-            }
-
-            &:nth-child(4) {
-                -webkit-transition-delay: 0.12s;
-                transition-delay: 0.12s;
-            }
-
-            .nav-mobi-open & {
-                .translate(0, 0);
-                .opacity(100);
-            }
-        }
+        float: none;
+        text-align: center;
+        margin-top: 15px;
 
         .nav-link {
-            padding: 5px 2px;
-            font-size: 32px;
-            #default-font.normal();
-            position: relative;
-            color: #fff;
-    
-            &:before {
-                content: " ";
-                display: block;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                height: 0;
-                background-color: @color_default;
-                .transition(all 0.1s ease);
-            }
-    
-            &:hover:before {
-                height: 5px;
-                background-color: @blue;
-            }
-    
-            &:after {
-                display: none;
-            }
-        }
-    }
-
-    .mobi-nav-btn {
-        display: block;
-        float: right;
-        margin: 5px 10px;
-
-        .fa {
-            color: @black;
-            font-size: 30px;
-        }
-    }
-}
-
-@media screen and (max-width: @layout_phone_max) {
-    .hdr {
-        padding: 10px;
-
-        .logo-link {
-            display: block;
-            width: 40px;
-        }
-
-        .logo-details {
-            padding-left: 55px;
-        }
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .mobi-nav-btn {
-        display: block;
-        float: right;
-        margin: 0 5px;
-
-        .fa {
-            color: @black;
-            font-size: 30px;
-        }
-    }
-
-    .nav-mobi {
-        display: block;
-        width: 150px;
-        margin: 0 auto;
-
-        .nav-list-item {
-            display: block;
-            .translate(0, -20px);
-            .opacity(0);
-            .transition(all 0.5s ease);
-
-            &:nth-child(2) {
-                -webkit-transition-delay: 0.04s;
-                transition-delay: 0.04s;
-            }
-
-            &:nth-child(3) {
-                -webkit-transition-delay: 0.08s;
-                transition-delay: 0.08s;
-            }
-
-            &:nth-child(4) {
-                -webkit-transition-delay: 0.12s;
-                transition-delay: 0.12s;
-            }
-
-            .nav-mobi-open & {
-                .translate(0, 0);
-                .opacity(100);
-            }
-        }
-
-        .nav-link {
-            padding: 5px 2px;
-            font-size: 32px;
-            #default-font.normal();
-            position: relative;
-            color: #fff;
-    
-            &:before {
-                content: " ";
-                display: block;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                height: 0;
-                background-color: @color_default;
-                .transition(all 0.1s ease);
-            }
-    
-            &:hover:before {
-                height: 5px;
-                background-color: @blue;
-            }
-    
-            &:after {
-                display: none;
-            }
+            font-size: 20px;
         }
     }
 }

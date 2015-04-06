@@ -15,7 +15,4 @@
     <nav class="nav">
         <?php include 'nav.php'; ?>
     </nav>
-    <a href="#" class="mobi-nav-btn icon-link">
-        <i class="fa fa-bars"></i>
-    </a>
 </header>

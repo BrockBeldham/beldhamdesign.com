@@ -30,7 +30,7 @@
     <link href="/static/css/states/state.css" rel="stylesheet" />
 </head>
 <body class="portfolio">
-    <div class="wrapper">
+    <div class="wrapper" data-mobi-nav-close>
 
         <?php include 'includes/header.php'; ?>
 

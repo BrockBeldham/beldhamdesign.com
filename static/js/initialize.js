@@ -23,7 +23,10 @@
                 pop: '.pop',
                 popBg: '.pop-bg',
                 popTile: '.pop-bg-tile',
-                popContent: '.pop-content'
+                popContent: '.pop-content',
+                mobiNav: '[data-mobi-nav-open]',
+                body: 'body',
+                mobiNavClose: '[data-mobi-nav-close]'
             },
             durations: {
                 pageTransition: 700
@@ -158,10 +161,10 @@
     };
 
     Core.prototype._initWork = function () {
-        $popTile = $(this.config.selectors.popTile);
-        $pop = $(this.config.selectors.pop);
-        $popContent = $(this.config.selectors.popContent);
-        $popBg = $(this.config.selectors.popBg);
+        var $popTile = $(this.config.selectors.popTile);
+        var $pop = $(this.config.selectors.pop);
+        var $popContent = $(this.config.selectors.popContent);
+        var $popBg = $(this.config.selectors.popBg);
 
         for(var i=1; i<=100; i++) {
             var div = document.createElement("div");
@@ -170,22 +173,22 @@
         }
 
         var $workItem = $(this.config.selectors.work);
-        var workOpenHandler = _(this._handleWorkOpen).bind(this, $pop, $popTile, $popContent);
+        var workOpenHandler = _(this._handleWorkOpen).bind(this, $pop, $popContent);
         $workItem.on('click', workOpenHandler);
 
         var $popClose = $(this.config.selectors.popClose);
-        var popCloseHandler = _(this._handlePopClose).bind(this, $pop, $popTile);
+        var popCloseHandler = _(this._handlePopClose).bind(this, $pop);
         $popClose.on('click', popCloseHandler);
     };
 
-    Core.prototype._handleWorkOpen = function ($pop, $popTile, $popContent, event) {
+    Core.prototype._handleWorkOpen = function ($pop, $popContent, event) {
         event.preventDefault();
 
         $popContent.html('');
         $pop.addClass('pop-open');
     };
 
-    Core.prototype._handlePopClose = function ($pop, $popTile, event) {
+    Core.prototype._handlePopClose = function ($pop, event) {
         event.preventDefault();
         $pop.removeClass('pop-open');
     };

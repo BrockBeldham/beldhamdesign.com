@@ -26,7 +26,7 @@
   -webkit-transition: transform 0.5s ease;
   transition: transform 0.5s ease;
 }
-.nav-mobi-open .wrapper {
+.mobi-nav-open .wrapper {
   position: fixed;
   -webkit-transform: translate3d(0, 50%, -1000px);
   transform: translate3d(0, 50%, -1000px);
