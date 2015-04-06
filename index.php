@@ -52,10 +52,6 @@
         <div class="pop-content"></div>
     </div>
     
-    <div class="nav-mobi">
-        <?php include 'includes/nav.php'; ?>
-    </div>
-    
     <script type="text/javascript" src="/static/components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/static/components/underscore/underscore-min.js"></script>
     <script type="text/javascript" src="/static/components/backbone/backbone.js"></script>
