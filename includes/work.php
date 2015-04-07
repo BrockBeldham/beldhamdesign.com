@@ -4,9 +4,6 @@
         <ul>
             <li class="work-list-item" id="workPiece1">
                 <div class="work-overlay">
-                    <a href="http://www.meadjohnson.com" target="_blank" class="icon-link">
-                        <i class="fa fa-link"></i>
-                    </a>
                     <a href="#" data-work-info class="icon-link">
                         <i class="fa fa-info"></i>
                     </a>
@@ -31,9 +28,6 @@
             </li>
             <li class="work-list-item" id="workPiece4">
                 <div class="work-overlay">
-                    <a href="http://anancloud.com/" target="_blank" class="icon-link">
-                        <i class="fa fa-link"></i>
-                    </a>
                     <a href="#" data-work-info class="icon-link">
                         <i class="fa fa-info"></i>
                     </a>
@@ -42,9 +36,6 @@
             </li>
             <li class="work-list-item" id="workPiece5">
                 <div class="work-overlay">
-                    <a href="/solarSystem" target="_blank" class="icon-link">
-                        <i class="fa fa-link"></i>
-                    </a>
                     <a href="#" data-work-info class="icon-link">
                         <i class="fa fa-info"></i>
                     </a>
