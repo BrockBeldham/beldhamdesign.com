@@ -20,6 +20,10 @@
         margin: 20px 0;
     }
 
+    .icon-list-item {
+        display: inline-block;
+    }
+
     .fa {
         width: 45px;
         height: 45px;
@@ -52,5 +56,112 @@
         float: right;
         padding: 0 0 0 30px;
         box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: @layout_sm_desktop_min) and (max-width: @layout_sm_desktop_max) {
+    .about {
+        width: 100%;
+
+        .fa {
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 23px;
+        }
+    }
+}
+
+@media screen and (min-width: @layout_tablet_min) and (max-width: @layout_tablet_max) {
+    .about {
+        width: 100%;
+
+        .about-right {
+            width: 55%;
+        }
+
+        .about-left {
+            width: 45%;
+        }
+
+        .fa {
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 23px;
+        }
+
+        .accolades {
+            text-align: right;
+
+            strong {
+                display: block;
+                overflow: hidden;
+                width: 0px;
+                height: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: @layout_smtablet_min) and (max-width: @layout_smtablet_max) {
+    .about {
+        width: 100%;
+
+        .about-right,
+        .about-left {
+            float: none;
+            width: 100%;
+            padding: 0;
+        }
+
+        .about-left img {
+            width: 80%;
+            max-width: 400px;
+            float: left;
+        }
+
+        .icon-list {
+            width: 20%;
+            float: right;
+            text-align: center;
+            margin: 0;
+        }
+
+        .icon-list-item {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .accolades {
+            width: 100%;
+            clear: both;
+            padding-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: @layout_phone_max) {
+    .about {
+        width: 100%;
+
+        .about-right,
+        .about-left {
+            float: none;
+            width: 100%;
+            padding: 0;
+        }
+
+        .fa {
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 23px;
+            margin: 0 5px;
+        }
+
+        .accolades {
+            font-size: 14px;
+        }
     }
 }

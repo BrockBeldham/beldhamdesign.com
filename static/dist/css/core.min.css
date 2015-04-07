@@ -738,6 +738,9 @@ input[type="checkbox"]:focus + label:before {
   text-align: center;
   margin: 20px 0;
 }
+.about .icon-list-item {
+  display: inline-block;
+}
 .about .fa {
   width: 45px;
   height: 45px;
@@ -769,6 +772,95 @@ input[type="checkbox"]:focus + label:before {
   float: right;
   padding: 0 0 0 30px;
   box-sizing: border-box;
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .about {
+    width: 100%;
+  }
+  .about .fa {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 959px) {
+  .about {
+    width: 100%;
+  }
+  .about .about-right {
+    width: 55%;
+  }
+  .about .about-left {
+    width: 45%;
+  }
+  .about .fa {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 23px;
+  }
+  .about .accolades {
+    text-align: right;
+  }
+  .about .accolades strong {
+    display: block;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .about {
+    width: 100%;
+  }
+  .about .about-right,
+  .about .about-left {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  .about .about-left img {
+    width: 80%;
+    max-width: 400px;
+    float: left;
+  }
+  .about .icon-list {
+    width: 20%;
+    float: right;
+    text-align: center;
+    margin: 0;
+  }
+  .about .icon-list-item {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .about .accolades {
+    width: 100%;
+    clear: both;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .about {
+    width: 100%;
+  }
+  .about .about-right,
+  .about .about-left {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  .about .fa {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 23px;
+    margin: 0 5px;
+  }
+  .about .accolades {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 960px) and (max-width: 1279px) {
