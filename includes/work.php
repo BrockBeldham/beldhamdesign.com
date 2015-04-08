@@ -53,3 +53,13 @@
         </ul>
     </div>
 </section>
+<script type="text/template" id="workPiece1Content">
+    <div class="work-content">
+        <div class="work-content-left">
+            <img src="<%= work.image %>">
+        </div>
+        <div class="work-content-right">
+        <%= work.content %>
+        </div>
+    </div>
+</script>
