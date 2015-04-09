@@ -1,0 +1,82 @@
+{
+    "work" : [
+        {
+            "img" : "static/img/work/work-1-content.png",
+            "title" : "Mead Johnson Corporate Site",
+            "client" : "Mead Johnson",
+            "role" : "Developer",
+            "platform" : "Website",
+            "link" : "http://www.meadjohnson.com",
+            "summary" : [
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe"
+            ]
+        },
+        {
+            "img" : "static/img/work/work-2-content.png",
+            "title" : "Kraft Hockeyville 2015",
+            "client" : "Kraft Canada",
+            "role" : "Developer",
+            "platform" : "Web Contest",
+            "link" : "http://www.khv2015.ca",
+            "summary" : [
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe"
+            ]
+        },
+        {
+            "img" : "static/img/work/work-3-content.png",
+            "title" : "Build Force",
+            "company" : "Build Force",
+            "role" : "Designer/Developer",
+            "platform" : "Web App",
+            "link" : null,
+            "summary" : [
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe"
+            ]
+        },
+        {
+            "img" : "static/img/work/work-4-content.png",
+            "title" : "Anan Cloud Corporate Site",
+            "client" : "Anan Cloud",
+            "role" : "Designer/Developer",
+            "platform" : "Website",
+            "link" : "http://www.anancloud.com",
+            "summary" : [
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe"
+            ]
+        },
+        {
+            "img" : "static/img/work/work-5-content.png",
+            "title" : "Three.js Solar System Experiment",
+            "client" : "Personal",
+            "role" : "Creator",
+            "platform" : "Web App",
+            "link" : "http://www.beldhamdesign.com/SolarSystem",
+            "summary" : [
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe"
+            ]
+        },
+        {
+            "img" : "static/img/work/work-6-content.png",
+            "title" : "Slide Jar Logo",
+            "client" : "SlideJar",
+            "role" : "Designer",
+            "platform" : "Branding",
+            "link" : null,
+            "summary" : [
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
+                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe"
+            ]
+        }
+    ]
+}
