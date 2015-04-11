@@ -36,6 +36,9 @@
                 work: 'work',
                 about: 'about',
                 contact: 'contact'
+            },
+            templates: {
+                work: '#workTemplate'
             }
         };
 
@@ -161,9 +164,15 @@
     };
 
     Core.prototype._initWork = function () {
-        var $popTile = $(this.config.selectors.popTile);
-        var $pop = $(this.config.selectors.pop);
-        var $popContent = $(this.config.selectors.popContent);
+        var that = this;
+        $.getJSON("static/js/ajax/work.json").done(function(data) {
+            that._bindWork(data);
+        })
+        .fail(function( jqxhr, textStatus, error ) {
+            var err = jqxhr + ',' + textStatus + ", " + error;
+            console.log(err);
+        });
+
         var $popBg = $(this.config.selectors.popBg);
 
         for(var i=1; i<=100; i++) {
@@ -171,9 +180,15 @@
             div.className = 'pop-bg-tile';
             $popBg.append(div);
         }
+    };
+
+    Core.prototype._bindWork = function (data) {
+        var $popTile = $(this.config.selectors.popTile);
+        var $pop = $(this.config.selectors.pop);
+        var $popContent = $(this.config.selectors.popContent);
 
         var $workItem = $(this.config.selectors.work);
-        var workOpenHandler = _(this._handleWorkOpen).bind(this, $pop, $popContent);
+        var workOpenHandler = _(this._handleWorkOpen).bind(this, $pop, $popContent, data);
         $workItem.on('click', workOpenHandler);
 
         var $popClose = $(this.config.selectors.popClose);
@@ -181,10 +196,14 @@
         $popClose.on('click', popCloseHandler);
     };
 
-    Core.prototype._handleWorkOpen = function ($pop, $popContent, event) {
+    Core.prototype._handleWorkOpen = function ($pop, $popContent, data, event) {
         event.preventDefault();
+        
+        var targetID = event.target.id.slice(-1);
+        var $workTemplate = $(this.config.templates.work);
+        var template = _.template($workTemplate.html());
 
-        $popContent.html('');
+        $popContent.html(template(data.work[targetID - 1]));
         $pop.addClass('pop-open');
     };
 

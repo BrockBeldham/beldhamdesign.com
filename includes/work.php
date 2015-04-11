@@ -2,50 +2,50 @@
     <div class="work">
         <h2>Work</h2>
         <ul>
-            <li class="work-list-item" id="workPiece1">
+            <li class="work-list-item">
                 <div class="work-overlay">
                     <a href="#" data-work-info class="icon-link">
-                        <i class="fa fa-info"></i>
+                        <i class="fa fa-info" id="workPiece1"></i>
                     </a>
                 </div>
                 <img src="static/img/work/work-1.jpg" alt="">
             </li>
-            <li class="work-list-item" id="workPiece2">
+            <li class="work-list-item">
                 <div class="work-overlay">
                     <a href="#" data-work-info class="icon-link">
-                        <i class="fa fa-info"></i>
+                        <i class="fa fa-info" id="workPiece2"></i>
                     </a>
                 </div>
                 <img src="static/img/work/work-2.jpg" alt="">
             </li>
-            <li class="work-list-item" id="workPiece3">
+            <li class="work-list-item">
                 <div class="work-overlay">
                     <a href="#" data-work-info class="icon-link">
-                        <i class="fa fa-info"></i>
+                        <i class="fa fa-info" id="workPiece3"></i>
                     </a>
                 </div>
                 <img src="static/img/work/work-3.jpg" alt="">
             </li>
-            <li class="work-list-item" id="workPiece4">
+            <li class="work-list-item">
                 <div class="work-overlay">
                     <a href="#" data-work-info class="icon-link">
-                        <i class="fa fa-info"></i>
+                        <i class="fa fa-info" id="workPiece4"></i>
                     </a>
                 </div>
                 <img src="static/img/work/work-4.jpg" alt="">
             </li>
-            <li class="work-list-item" id="workPiece5">
+            <li class="work-list-item">
                 <div class="work-overlay">
                     <a href="#" data-work-info class="icon-link">
-                        <i class="fa fa-info"></i>
+                        <i class="fa fa-info" id="workPiece5"></i>
                     </a>
                 </div>
                 <img src="static/img/work/work-5.jpg" alt="">
             </li>
-            <li class="work-list-item" id="workPiece6">
+            <li class="work-list-item">
                 <div class="work-overlay">
                     <a href="#" data-work-info class="icon-link">
-                        <i class="fa fa-info"></i>
+                        <i class="fa fa-info" id="workPiece6"></i>
                     </a>
                 </div>
                 <img src="static/img/work/work-6.jpg" alt="">
@@ -53,13 +53,13 @@
         </ul>
     </div>
 </section>
-<script type="text/template" id="workPiece1Content">
+<script type="text/template" id="workTemplate">
     <div class="work-content">
         <div class="work-content-left">
-            <img src="<%= work.image %>">
+            <img src="<%= img %>">
         </div>
         <div class="work-content-right">
-        <%= work.content %>
+            <%= summary %>
         </div>
     </div>
 </script>
