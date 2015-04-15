@@ -54,12 +54,18 @@
     </div>
 </section>
 <script type="text/template" id="workTemplate">
-    <div class="work-content">
+    <div class="work-content clear-fix">
         <div class="work-content-left">
             <img src="<%= img %>">
         </div>
         <div class="work-content-right">
-            <%= summary %>
+            <h5><%= title %></h5>
+            <p><em>Client:</em> <%= client %></p>
+            <p><em>Role:</em> <%= role %></p>
+            <p><em>Platform:</em> <%= platform %></p>
+            <% _.each(summary, function(summary) { %>
+                <p><%= summary %></p>
+            <% }); %>
         </div>
     </div>
 </script>

@@ -198,13 +198,14 @@
 
     Core.prototype._handleWorkOpen = function ($pop, $popContent, data, event) {
         event.preventDefault();
-        
+
         var targetID = event.target.id.slice(-1);
         var $workTemplate = $(this.config.templates.work);
         var template = _.template($workTemplate.html());
 
         $popContent.html(template(data.work[targetID - 1]));
         $pop.addClass('pop-open');
+        $('body').addClass('pop-open');
     };
 
     Core.prototype._handlePopClose = function ($pop, event) {
