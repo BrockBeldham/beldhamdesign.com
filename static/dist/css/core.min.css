@@ -657,6 +657,7 @@ input[type="checkbox"]:focus + label:before {
 }
 .pop .pop-close {
   position: absolute;
+  z-index: 1000;
   top: 0;
   right: 10px;
   font-size: 36px;
@@ -678,7 +679,7 @@ input[type="checkbox"]:focus + label:before {
   -webkit-transition: all 1s ease 1s;
   transition: all 1s ease 1s;
   position: relative;
-  padding: 40px 20px;
+  padding: 20px;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
@@ -690,7 +691,7 @@ input[type="checkbox"]:focus + label:before {
   font-style: normal;
 }
 .pop .work-content-left {
-  width: 60%;
+  width: 50%;
   float: left;
   padding: 0 20px 0 0;
   box-sizing: border-box;

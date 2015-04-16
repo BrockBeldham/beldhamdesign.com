@@ -8,9 +8,8 @@
             "platform" : "Website",
             "link" : "http://www.meadjohnson.com",
             "summary" : [
-                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
-                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
-                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe"
+                "Mead Johnson came to Trapeze looking for a change in their corporate website. They weren't looking for a change in branding, or even changes in their websites design and structure. What they needed was an update in their technologies. This included an updated CMS, a responsive designed website and modules that run without a flash dependency.",
+                "As a developer on this project I quickly learned the ins and outs of the Drupal CMS. There were some things we weren't able to do from their old site due to Drupal's limitations. Overall, the responsive design worked perfectly and most Flash modules were able to be converted into an HTML/CSS/JS solution."
             ]
         },
         {
@@ -21,9 +20,8 @@
             "platform" : "Web Contest",
             "link" : "http://www.khv2015.ca",
             "summary" : [
-                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
-                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe",
-                "ncw ejrk w chjr wek rhew kc rje whc rwk chre wjckr ewhc rhc wkj crhe whc rkwe cjre wchr wkchrej hcwe hckjwer hc krew chrkw cher jcr whejkc jhrew khcr hewk crhj ewhjcr kjew rhjkw her jkew chr cekwh rhjkwe"
+                "Kraft has been running the Kraft Hockeyville program for almost a decade. In the contest people from across Canada nominate their communities for a chance to win upgrades to their local hockey arena. The contest runs in phases. First, a community member fills out a form in order to nominate thier community. Next the community rallies around their nomination through social media with the use of a custom hashtag. Next, Kraft chooses their top 10 best nominations. Then, we entered the voting phase where the communities can vote for themselves an infinite amount of times. This was the most intense phase as we had around 100,000 hits to the site per day. Finally, there is a second round of voting between the top 2 where the winner wins $100,000 and an NHL pre-season game played in their community.",
+                "There were many difficult aspects to this project. The site was responsive of course, but majority of the content was user driven. We as developers had to account for all possible image sizes, users could upload youtube videos of their communities and many other things. Also, with each phase change the content on the site and design of the site changed. This was acheived with an extensive Django backend that swapped out templates based on a timeline. In order to keep voting smooth and avoid hits bringing the site down, the voting process was all ajax. This allowed us to have users vote infinitely without having a page reload everytime."
             ]
         },
         {
