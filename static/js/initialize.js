@@ -1,12 +1,14 @@
 (function () {
     var global = this;
 
+    // namespacing
     var _        = global._;
     var $        = global.jQuery;
     var Backbone = global.Backbone;
 
     var Portfolio = (global.Portfolio || (global.Portfolio = { }));
 
+    // setting up vars to be used in core
     var Core = Portfolio.Core = function (options) {
 
         var defaults = {
@@ -51,9 +53,9 @@
         console.log("%cYou didn't need to tear apart my website with dev tools...you could have just asked. The github repo is right here: %chttps://github.com/BrockBeldham/beldhamdesign.com", "color: #182232; font-family: 'Lato'; font-size: 18px;", "color: #3C76D4; font-style: bold; font-family: 'Lato'; font-size: 18px;");
         this._initNav();
         this._initRouter();
-        this._initWork();
     };
 
+    // preventing nav links default and using backbone instead
     Core.prototype._initNav = function () {
         var $navLink = $(this.config.selectors.navLink);
         $navLink.on('click', function(event) {
@@ -62,23 +64,26 @@
         });
     };
 
+    // creating backbone routes
     Core.prototype._initRouter = function () {
         var that = this;
         var selectors = this.config.selectors;
         var routes = this.config.routes;
         var MyRouter = Backbone.Router.extend({
             routes: {
-                ''      : routes.home,
-                'work'    : routes.work,
-                'about'   : routes.about,
-                'contact' : routes.contact
+                ''            : routes.home,
+                'work'        : routes.work,
+                'work/:query' : routes.work,
+                'about'       : routes.about,
+                'contact'     : routes.contact
             },
         
             home: function() {
                 that._openPage(selectors.homePage);
             },
         
-            work: function() {
+            work: function(query) {
+                that._initWork();
                 that._openPage(selectors.workPage);
             },
         
@@ -95,6 +100,7 @@
         Backbone.history.start({ pushState: true });
     };
 
+    // is the page load coming from within the site or external
     Core.prototype._openPage = function (pageId) {
         var $container = $(this.config.selectors.container);
         var $pageId = $(pageId);
@@ -107,6 +113,7 @@
         }
     };
 
+    // leaving one page transitioning to dark grey screen
     Core.prototype._pageTransitionIn = function ($pageId, $container) {
         var transitionDuration = this.config.durations.pageTransition;
         var that = this
@@ -132,6 +139,7 @@
         });
     };
 
+    // arriving at the destination page from dark grey to page
     Core.prototype._pageTransitionOut = function ($pageId, $container, $header, transitionDuration) {
         var that = this;
 
@@ -157,12 +165,15 @@
         });
     };
 
+    // when transition is complete setup page classes for next page transition
     Core.prototype._pageTransitionComplete = function (element, $container) {
         $(element).removeAttr('style');
         $container.removeClass('active-page');
         $(element).addClass('active-page');
     };
 
+    // initializing the work section means grabbing the json data
+    // for the content and creating the divs for that animated background
     Core.prototype._initWork = function () {
         var that = this;
         $.getJSON("static/js/ajax/work.json").done(function(data) {
@@ -182,6 +193,8 @@
         }
     };
 
+    // binding click events to the info button on work items
+    // and the popup close icon
     Core.prototype._bindWork = function (data) {
         var $popTile = $(this.config.selectors.popTile);
         var $pop = $(this.config.selectors.pop);
@@ -196,6 +209,7 @@
         $popClose.on('click', popCloseHandler);
     };
 
+    // open up the work popup and insert content using underscore template
     Core.prototype._handleWorkOpen = function ($pop, $popContent, data, event) {
         event.preventDefault();
 
@@ -208,11 +222,13 @@
         $('body').addClass('pop-open');
     };
 
+    // close the work popup
     Core.prototype._handlePopClose = function ($pop, event) {
         event.preventDefault();
         $pop.removeClass('pop-open');
     };
 
+    // utility function for getting a random number between
     Core.prototype.getRandomNum = function (min, max) {
         return Math.floor(Math.random() * (max - min) + min);
     };
