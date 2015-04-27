@@ -27,7 +27,7 @@
         {
             "img" : "static/img/work/work-3-content.png",
             "title" : "Build Force",
-            "company" : "Build Force",
+            "client" : "Build Force",
             "role" : "Designer/Developer",
             "platform" : "Web App",
             "link" : null,

@@ -23,12 +23,7 @@
                 work: '[data-work-info]',
                 popClose: '[data-pop-close]',
                 pop: '.pop',
-                popBg: '.pop-bg',
-                popTile: '.pop-bg-tile',
-                popContent: '.pop-content',
-                mobiNav: '[data-mobi-nav-open]',
-                body: 'body',
-                mobiNavClose: '[data-mobi-nav-close]'
+                popContent: '.pop-content'
             },
             durations: {
                 pageTransition: 700
@@ -172,8 +167,7 @@
         $(element).addClass('active-page');
     };
 
-    // initializing the work section means grabbing the json data
-    // for the content and creating the divs for that animated background
+    // initializing the work section by grabbing the json data for the content
     Core.prototype._initWork = function () {
         var that = this;
         $.getJSON("static/js/ajax/work.json").done(function(data) {
@@ -183,30 +177,16 @@
             var err = jqxhr + ',' + textStatus + ", " + error;
             console.log(err);
         });
-
-        var $popBg = $(this.config.selectors.popBg);
-
-        for(var i=1; i<=100; i++) {
-            var div = document.createElement("div");
-            div.className = 'pop-bg-tile';
-            $popBg.append(div);
-        }
     };
 
     // binding click events to the info button on work items
-    // and the popup close icon
     Core.prototype._bindWork = function (data) {
-        var $popTile = $(this.config.selectors.popTile);
         var $pop = $(this.config.selectors.pop);
         var $popContent = $(this.config.selectors.popContent);
 
         var $workItem = $(this.config.selectors.work);
         var workOpenHandler = _(this._handleWorkOpen).bind(this, $pop, $popContent, data);
         $workItem.on('click', workOpenHandler);
-
-        var $popClose = $(this.config.selectors.popClose);
-        var popCloseHandler = _(this._handlePopClose).bind(this, $pop);
-        $popClose.on('click', popCloseHandler);
     };
 
     // open up the work popup and insert content using underscore template
@@ -218,12 +198,23 @@
         var template = _.template($workTemplate.html());
 
         $popContent.html(template(data.work[targetID - 1]));
+        this._bindWorkClose();
         $pop.addClass('pop-open');
-        $('body').addClass('pop-open');
+    };
+
+    // binding click events to the close button
+    Core.prototype._bindWorkClose = function () {
+        console.log('binding');
+        var $popClose = $(this.config.selectors.popClose);
+        var $pop = $(this.config.selectors.pop);
+
+        var popCloseHandler = _(this._handlePopClose).bind(this, $pop);
+        $popClose.on('click', popCloseHandler);
     };
 
     // close the work popup
     Core.prototype._handlePopClose = function ($pop, event) {
+        console.log('handling');
         event.preventDefault();
         $pop.removeClass('pop-open');
     };

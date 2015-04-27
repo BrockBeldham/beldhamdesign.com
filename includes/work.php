@@ -1,6 +1,10 @@
 <section id="work" class="container">
     <div class="work">
         <h2>Work</h2>
+
+        <div class="pop">
+            <div class="pop-content"></div>
+        </div>
         <ul>
             <li class="work-list-item">
                 <div class="work-overlay">
@@ -54,6 +58,11 @@
     </div>
 </section>
 <script type="text/template" id="workTemplate">
+    <div class="pop-close" data-pop-close>
+        <a href="#" class="icon-link">
+            <i class="fa fa-times"></i>
+        </a>
+    </div>
     <div class="work-content clear-fix">
         <div class="work-content-left">
             <img src="<%= img %>">

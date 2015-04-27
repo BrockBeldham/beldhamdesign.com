@@ -15,9 +15,6 @@ body {
   overflow-x: hidden;
   perspective: 1500px;
 }
-body.pop-open {
-  overflow: hidden;
-}
 h1 {
   font-size: 72px;
   line-height: 0.7em;

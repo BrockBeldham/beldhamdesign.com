@@ -41,16 +41,9 @@
         <?php include 'includes/work.php'; ?>
 
         <?php include 'includes/contact.php'; ?>
-
+        
     </div>
 
-    <div class="pop clear-fix">
-        <div class="pop-bg"></div>
-        <div class="pop-close" data-pop-close>
-            <a href="#" class="icon-link"><i class="fa fa-times"></i></a>
-        </div>
-        <div class="pop-content"></div>
-    </div>
     
     <script type="text/javascript" src="/static/components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/static/components/underscore/underscore-min.js"></script>
