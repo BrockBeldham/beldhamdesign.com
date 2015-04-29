@@ -197,6 +197,8 @@
         var $workTemplate = $(this.config.templates.work);
         var template = _.template($workTemplate.html());
 
+        $("html").velocity("scroll", { offset: "200px", mobileHA: false });
+
         $popContent.html(template(data.work[targetID - 1]));
         this._bindWorkClose();
         $pop.addClass('pop-open');

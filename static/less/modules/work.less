@@ -110,7 +110,12 @@
         .transition(all 1s ease 0.25s);
 
         .fa {
+            .transition(color 0.25s ease);
             color: @grey;
+
+            &:hover {
+                color: @blue;
+            }
         }
     }
 
@@ -128,6 +133,7 @@
 
     .work-content {
         color: @bg_grey;
+
         em {
             #default-font.hairline();
             font-style: normal;
@@ -135,6 +141,15 @@
 
         h5 {
             #default-font.bold();
+        }
+
+        a {
+            color: @bg_grey;
+            .transition(color 0.25s ease);
+
+            &:hover {
+                color: @blue;
+            }
         }
     }
 

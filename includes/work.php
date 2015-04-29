@@ -68,7 +68,16 @@
             <img src="<%= img %>">
         </div>
         <div class="work-content-right">
-            <h5><%= title %></h5>
+            <h5>
+                <% if(link) { %>
+                    <a href="<%= link %>" target="_blank">
+                        <%= title %>
+                        <i class="fa fa-link"></i>
+                    </a>
+                <% } else { %>
+                    <%= title %>
+                <% } %>
+            </h5>
             <p><em>Client:</em> <%= client %></p>
             <p><em>Role:</em> <%= role %></p>
             <p><em>Platform:</em> <%= platform %></p>

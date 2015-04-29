@@ -106,7 +106,12 @@
   transition: all 1s ease 0.25s;
 }
 .pop .pop-close .fa {
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
   color: #c6c6c6;
+}
+.pop .pop-close .fa:hover {
+  color: #3c76d4;
 }
 .pop .pop-content {
   opacity: 0;
@@ -134,6 +139,14 @@
 .pop .work-content h5 {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: 700;
+}
+.pop .work-content a {
+  color: #e2e2e2;
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+.pop .work-content a:hover {
+  color: #3c76d4;
 }
 .pop .work-content-left {
   width: 50%;
