@@ -1,7 +1,7 @@
 .container {
   min-height: 100%;
   width: 100%;
-  padding: 150px 5% 0;
+  padding: 150px 40px 0;
   box-sizing: border-box;
   position: absolute;
   z-index: 1;

@@ -26,6 +26,7 @@
     <link href="/static/css/modules/home.css" rel="stylesheet" />
     <link href="/static/css/modules/work.css" rel="stylesheet" />
     <link href="/static/css/modules/about.css" rel="stylesheet" />
+    <link href="/static/css/modules/contact.css" rel="stylesheet" />
     <!-- Modules -->
     <link href="/static/css/states/state.css" rel="stylesheet" />
 </head>

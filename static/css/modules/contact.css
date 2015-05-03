@@ -1,0 +1,75 @@
+.contact {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.contact .icon-list {
+  margin: 20px 0;
+}
+.contact .icon-list-item {
+  margin: 0 0 20px;
+}
+.contact .icon-list-item:hover .fa {
+  background-color: #182232;
+}
+.contact .icon-list-item:hover .icon-label {
+  width: 50%;
+}
+.contact .icon-list-item a {
+  display: block;
+}
+.contact .icon-list-item .fa {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 30px;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #3c76d4;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.contact .icon-list-item .icon-label {
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  width: 0;
+  -webkit-transition: width 0.25s ease;
+  transition: width 0.25s ease;
+  font-size: 18px;
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  
+}
+@media screen and (min-width: 769px) and (max-width: 959px) {
+  
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .contact .icon-list-item:hover .icon-label {
+    width: calc(100% - 70px);
+  }
+}
+@media screen and (max-width: 479px) {
+  .contact .icon-list-item {
+    margin-bottom: 10px;
+  }
+  .contact .icon-list-item .fa {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+  }
+  .contact .icon-list-item .icon-label {
+    font-size: 14px;
+  }
+  .contact .icon-list-item:hover .icon-label {
+    width: calc(100% - 70px);
+  }
+}

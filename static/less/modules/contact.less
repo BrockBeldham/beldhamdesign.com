@@ -1,0 +1,92 @@
+@import "../settings.less";
+
+.contact {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+    .icon-list {
+        margin: 20px 0;
+    }
+
+    .icon-list-item {
+        margin: 0 0 20px;
+
+        &:hover {
+            .fa {
+                background-color: @color_default;
+            }
+
+            .icon-label {
+                width: 50%;
+            }
+        }
+
+        a {
+            display: block;
+        }
+
+        .fa {
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            font-size: 30px;
+            color: @white;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            background-color: @blue;
+            .transition(all 0.25s ease);
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .icon-label {
+            white-space: nowrap;
+            display: inline-block;
+            vertical-align: middle;
+            overflow: hidden;
+            width: 0;
+            .transition(width 0.25s ease);
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (min-width: @layout_sm_desktop_min) and (max-width: @layout_sm_desktop_max) {
+    .contact {
+    }
+}
+
+@media screen and (min-width: @layout_tablet_min) and (max-width: @layout_tablet_max) {
+    .contact {
+    }
+}
+
+@media screen and (min-width: @layout_smtablet_min) and (max-width: @layout_smtablet_max) {
+    .contact .icon-list-item:hover .icon-label {
+        width: ~"calc(100% - 70px)";
+    }
+}
+
+@media screen and (max-width: @layout_phone_max) {
+    .contact .icon-list-item{
+        margin-bottom: 10px;
+
+        .fa {
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 20px;
+        }
+        .icon-label {
+            font-size: 14px;
+        }
+
+        &:hover .icon-label {
+            width: ~"calc(100% - 70px)";
+        }
+    }
+}
