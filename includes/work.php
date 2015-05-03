@@ -6,7 +6,7 @@
         <div class="pop">
             <div class="pop-content"></div>
         </div>
-        <ul>
+        <ul class="work-list">
             <li class="work-list-item">
                 <div class="work-overlay">
                     <a href="#" data-work-info class="icon-link">
