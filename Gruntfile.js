@@ -79,6 +79,7 @@ module.exports = function(grunt) {
                 files: {
                     '<%= static_folder %>dist/js/core.min.js' : [
                         // Components
+                        '<%= static_folder %>components/modernizr/modernizr.custom.js',
                         '<%= static_folder %>js/initialize.js',
                         '<%= static_folder %>js/analytics.js'
                     ]

@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <?php
+    // Frontend asset concatenation & minification.
+    global $ASSETS_DEV;
+    $ASSETS_DEV = FALSE;
+    ?>
 
     <!--- FAVICONS START HERE -->
     <!--- FAVICONS END HERE -->
@@ -16,19 +22,24 @@
     <!-- Components -->
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Base -->
-    <link href="/static/css/base/reset.css" rel="stylesheet" />
-    <link href="/static/css/base/base.css" rel="stylesheet" />
-    <link href="/static/css/base/layout.css" rel="stylesheet" />
-    <!-- Modules -->
-    <link href="/static/css/modules/utilities.css" rel="stylesheet" />
-    <link href="/static/css/modules/header.css" rel="stylesheet" />
-    <link href="/static/css/modules/home.css" rel="stylesheet" />
-    <link href="/static/css/modules/work.css" rel="stylesheet" />
-    <link href="/static/css/modules/about.css" rel="stylesheet" />
-    <link href="/static/css/modules/contact.css" rel="stylesheet" />
-    <!-- Modules -->
-    <link href="/static/css/states/state.css" rel="stylesheet" />
+
+    <? if ($ASSETS_DEV): ?>
+        <!-- Base -->
+        <link href="/static/css/base/reset.css" rel="stylesheet" />
+        <link href="/static/css/base/base.css" rel="stylesheet" />
+        <link href="/static/css/base/layout.css" rel="stylesheet" />
+        <!-- Modules -->
+        <link href="/static/css/modules/utilities.css" rel="stylesheet" />
+        <link href="/static/css/modules/header.css" rel="stylesheet" />
+        <link href="/static/css/modules/home.css" rel="stylesheet" />
+        <link href="/static/css/modules/work.css" rel="stylesheet" />
+        <link href="/static/css/modules/about.css" rel="stylesheet" />
+        <link href="/static/css/modules/contact.css" rel="stylesheet" />
+        <!-- Modules -->
+        <link href="/static/css/states/state.css" rel="stylesheet" />
+    <? else: ?>
+        <link href="/static/dist/css/core.min.css" rel="stylesheet" />
+    <? endif ?>
 </head>
 <body class="portfolio">
     <div class="wrapper" data-mobi-nav-close>
@@ -55,12 +66,20 @@
         ga('send', 'pageview');
     </script>
     
-    <script type="text/javascript" src="/static/components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="/static/components/underscore/underscore-min.js"></script>
-    <script type="text/javascript" src="/static/components/backbone/backbone.js"></script>
-    <script type="text/javascript" src="/static/components/velocity/velocity.min.js"></script>
-    <script type="text/javascript" src="/static/components/modernizr/modernizr.custom.js"></script>
-    <script type="text/javascript" src="/static/js/initialize.js"></script>
-    <script type="text/javascript" src="/static/js/analytics.js"></script>
+    <? if ($ASSETS_DEV): ?>
+        <script type="text/javascript" src="/static/components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/static/components/underscore/underscore-min.js"></script>
+        <script type="text/javascript" src="/static/components/backbone/backbone.js"></script>
+        <script type="text/javascript" src="/static/components/velocity/velocity.min.js"></script>
+        <script type="text/javascript" src="/static/components/modernizr/modernizr.custom.js"></script>
+        <script type="text/javascript" src="/static/js/initialize.js"></script>
+        <script type="text/javascript" src="/static/js/analytics.js"></script>
+    <? else: ?>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+        <script type="text/javascript" src="/static/dist/js/core.min.js"></script>
+    <? endif?>
 </body>
 </html>
