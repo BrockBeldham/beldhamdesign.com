@@ -8,7 +8,12 @@
         <ul class="work-list">
             <li class="work-list-item">
                 <div class="work-overlay">
-                    <a href="#" data-work-info class="icon-link">
+                    <a href="#"
+                    class="icon-link"
+                    data-work-info
+                    data-event-category="work"
+                    data-event-action="details"
+                    data-event-label="workPiece1_meadJohnson">
                         <i class="fa fa-info" id="workPiece1"></i>
                     </a>
                 </div>
@@ -16,7 +21,12 @@
             </li>
             <li class="work-list-item">
                 <div class="work-overlay">
-                    <a href="#" data-work-info class="icon-link">
+                    <a href="#"
+                    class="icon-link"
+                    data-work-info
+                    data-event-category="work"
+                    data-event-action="details"
+                    data-event-label="workPiece2_kraftProjectPlay">
                         <i class="fa fa-info" id="workPiece2"></i>
                     </a>
                 </div>
@@ -24,7 +34,12 @@
             </li>
             <li class="work-list-item">
                 <div class="work-overlay">
-                    <a href="#" data-work-info class="icon-link">
+                    <a href="#"
+                    class="icon-link"
+                    data-work-info
+                    data-event-category="work"
+                    data-event-action="details"
+                    data-event-label="workPiece3_buildForce">
                         <i class="fa fa-info" id="workPiece3"></i>
                     </a>
                 </div>
@@ -32,7 +47,12 @@
             </li>
             <li class="work-list-item">
                 <div class="work-overlay">
-                    <a href="#" data-work-info class="icon-link">
+                    <a href="#"
+                    class="icon-link"
+                    data-work-info
+                    data-event-category="work"
+                    data-event-action="details"
+                    data-event-label="workPiece4_ananCloud">
                         <i class="fa fa-info" id="workPiece4"></i>
                     </a>
                 </div>
@@ -40,7 +60,12 @@
             </li>
             <li class="work-list-item">
                 <div class="work-overlay">
-                    <a href="#" data-work-info class="icon-link">
+                    <a href="#"
+                    class="icon-link"
+                    data-work-info
+                    data-event-category="work"
+                    data-event-action="details"
+                    data-event-label="workPiece5_solarSystem">
                         <i class="fa fa-info" id="workPiece5"></i>
                     </a>
                 </div>
@@ -48,7 +73,12 @@
             </li>
             <li class="work-list-item">
                 <div class="work-overlay">
-                    <a href="#" data-work-info class="icon-link">
+                    <a href="#"
+                    class="icon-link"
+                    data-work-info
+                    data-event-category="work"
+                    data-event-action="details"
+                    data-event-label="workPiece6_slideJar">
                         <i class="fa fa-info" id="workPiece6"></i>
                     </a>
                 </div>
@@ -70,7 +100,15 @@
         <div class="work-content-right">
             <h5>
                 <% if(link) { %>
-                    <a href="<%= link %>" target="_blank">
+                    <a href="<%= link %>"
+
+                   target="_blank"
+
+                   data-event-category="work"
+
+                   data-event-action="link"
+
+                   data-event-label="<%= title %>">
                         <%= title %>
                         <i class="fa fa-link"></i>
                     </a>

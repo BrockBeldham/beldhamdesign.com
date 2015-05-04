@@ -202,6 +202,8 @@
         $popContent.html(template(data.work[targetID - 1]));
         this._bindWorkClose();
         $pop.addClass('pop-open');
+        
+        new AnalyticAttributes();
     };
 
     // binding click events to the close button
@@ -228,11 +230,9 @@
 
     // Auto instantiate
     $(function () {
-        var $portolio = $('.portfolio');
-
-        _($portolio).each(function () {
-            new Core();
-        });
+        new Core();
     });
+
+    return Core;
 
 }).call(this);
