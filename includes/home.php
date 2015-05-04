@@ -1,6 +1,6 @@
 <section id="home" class="container">
     <div class="home">
-        <h3>Lorem ipsum dolor sit amet <strong>consectetur</strong>, <strong>adipiscing</strong>, <strong>sed eiusmod</strong>. tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h3>
+        <h3>Hi, my name is Brock. I like to make <strong>innovative</strong>, <strong>engaging</strong>, <strong>and awesome</strong> web applications. Check out my work and let's start something awesome.</h3>
         <div class="icon-list">
             <a href="mailto:brockbeldham@gmail.com" target="_blank" class="icon-link">
                 <i class="fa fa-envelope"></i>
