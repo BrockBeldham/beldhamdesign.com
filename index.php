@@ -30,6 +30,7 @@
     <meta name="description" content="Brock Beldham is an Interactive Designer and Front-End Developer from Toronto, ON" />
     <meta name="keywords" content="Brock Beldham, Front-End, Developer, Engineer, Web Design, Graphic Design, Special Effects, Animation, Portfolio" />
 
+    <meta property="fb:app_id" content="1583762775239345">
     <meta property="og:title" content="Brock Beldham Interactive Designer" />
     <meta property="og:site_name" content="Beldham Design"/>
     <meta property="og:url" content="http://www.kraftprojectplay.com" />
@@ -59,6 +60,24 @@
     <? endif ?>
 </head>
 <body class="portfolio">
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '1583762775239345',
+                xfbml      : true,
+                version    : 'v2.3'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <div class="wrapper" data-mobi-nav-close>
 
         <?php include 'includes/header.php'; ?>
