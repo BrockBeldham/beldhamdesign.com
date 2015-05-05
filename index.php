@@ -33,6 +33,7 @@
     <meta property="fb:app_id" content="1583762775239345">
     <meta property="og:title" content="Brock Beldham Interactive Designer" />
     <meta property="og:site_name" content="Beldham Design"/>
+    <meta property="og:type" content="website"/>
     <meta property="og:url" content="http://www.kraftprojectplay.com" />
     <meta property="og:description" content="Hi, my name is Brock. I like to make innovative, engaging, and awesome web applications. Check out my work and let's start something awesome." />
     <meta property="og:image" content="http://www.beldhamdesign.com/static/img/facebook-cover.jpg" />
