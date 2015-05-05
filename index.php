@@ -30,6 +30,12 @@
     <meta name="description" content="Brock Beldham is an Interactive Designer and Front-End Developer from Toronto, ON" />
     <meta name="keywords" content="Brock Beldham, Front-End, Developer, Engineer, Web Design, Graphic Design, Special Effects, Animation, Portfolio" />
 
+    <meta property="og:title" content="Brock Beldham Interactive Designer" />
+    <meta property="og:site_name" content="Beldham Design"/>
+    <meta property="og:url" content="http://www.kraftprojectplay.com" />
+    <meta property="og:description" content="Hi, my name is Brock. I like to make innovative, engaging, and awesome web applications. Check out my work and let's start something awesome." />
+    <meta property="og:image" content="http://www.beldhamdesign.com/static/img/facebook-cover.jpg" />
+
     <!-- Components -->
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
