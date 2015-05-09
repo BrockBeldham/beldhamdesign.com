@@ -478,7 +478,7 @@ input[type="checkbox"]:focus + label:before {
 
 .home {
   margin: 0 auto;
-  max-width: 75%;
+  max-width: 900px;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -1028,6 +1028,6 @@ input[type="checkbox"]:focus + label:before {
     z-index: 2;
   }
   .container {
-    padding: 120px 20px 0;
+    padding: 150px 20px 0;
   }
 }
