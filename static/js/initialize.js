@@ -26,7 +26,7 @@
                 popContent: '.pop-content'
             },
             durations: {
-                pageTransition: 700
+                pageTransition: 500
             },
             routes: {
                 home: 'home',
@@ -120,17 +120,8 @@
             duration: transitionDuration,
             easing: "easeOutSine",
             complete: function(element) {
-                setTimeout(function(){
-                    that._pageTransitionOut($pageId, $container, $header, transitionDuration);
-                }, transitionDuration);
+                that._pageTransitionOut($pageId, $container, $header, transitionDuration);
             }
-        });
-
-        $header.velocity({
-            top: "-150px"
-        },{
-            duration: transitionDuration,
-            easing: "easeOutSine"
         });
     };
 
@@ -150,13 +141,6 @@
             complete: function(element) {
                 that._pageTransitionComplete(element, $container);
             }
-        });
-
-        $header.velocity({
-            top: "0"
-        },{
-            duration: transitionDuration,
-            easing: "easeOutSine"
         });
     };
 
