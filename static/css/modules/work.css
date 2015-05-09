@@ -12,11 +12,11 @@
   width: 30%;
   margin: 0 -4px 40px 5%;
   display: inline-block;
-  padding: 20px;
-  background: #3c76d4;
-  border: 1px solid #182232;
+  padding: 0;
+  border: 1px solid #c6c6c6;
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -27,8 +27,23 @@
   opacity: 1;
   filter: alpha(opacity=100);
 }
+.work .work-list-item:hover img {
+  -webkit-transform: translate(5%, 5%) scale(1.2);
+  -ms-transform: translate(5%, 5%) scale(1.2);
+  transform: translate(5%, 5%) scale(1.2);
+  -webkit-transition: all 5s ease;
+  transition: all 5s ease;
+}
 .work .work-list-item img {
   display: block;
+  width: 110%;
+  -webkit-transform-origin: 30% 30%;
+  transform-origin: 30% 30%;
+  -webkit-transform: translate(0, 0) scale(1);
+  -ms-transform: translate(0, 0) scale(1);
+  transform: translate(0, 0) scale(1);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 .work .work-list-item.view-work {
   z-index: 999;
@@ -41,10 +56,10 @@
 }
 .work .work-overlay {
   position: absolute;
-  top: 20px;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding-top: 50%;
   background: rgba(24, 34, 50, 0.6);
   opacity: 0;
@@ -52,6 +67,7 @@
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   text-align: center;
+  z-index: 1;
 }
 .work .fa-info {
   font-size: 60px;

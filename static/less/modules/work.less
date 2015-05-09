@@ -15,23 +15,39 @@
         width: 30%;
         margin: 0 -4px 40px 5%;
         display: inline-block;
-        padding: 20px;
-        background: @blue;
-        border: 1px solid @color_default;
+        padding: 0;
+        border: 1px solid @grey;
         box-sizing: border-box;
         position: relative;
+        overflow: hidden;
         .transition(all 0.5s ease);
         
         &:nth-child(3n+1) {
             margin-left: 0;
         }
 
-        &:hover .work-overlay {
-            .opacity(100);
+        &:hover {
+            .work-overlay {
+                .opacity(100);
+            }
+
+            img {
+                -webkit-transform: translate(5%, 5%) scale(1.2);
+                -ms-transform: translate(5%, 5%) scale(1.2);
+                transform: translate(5%, 5%) scale(1.2);
+                .transition(all 5s ease);
+            }
         }
 
         img {
             display: block;
+            width: 110%;
+            -webkit-transform-origin: 30% 30%;
+            transform-origin: 30% 30%;
+            -webkit-transform: translate(0, 0) scale(1);
+            -ms-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+            .transition(all 1s ease);
         }
 
         &.view-work {
@@ -48,15 +64,16 @@
 
     .work-overlay {
         position: absolute;
-        top: 20px;
-        bottom: 20px;
-        left: 20px;
-        right: 20px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         padding-top: 50%;
         background: rgba(24, 34, 50, 0.6);
         .opacity(0);
         .transition(all 0.2s ease);
         text-align: center;
+        z-index: 1;
     }
 
     .fa-info {
