@@ -28,7 +28,6 @@
     <title>Brock Beldham | Portfolio</title>
 
     <meta name="description" content="Brock Beldham is an Interactive Designer and Front-End Developer from Toronto, ON" />
-    <meta name="keywords" content="Brock Beldham, Front-End, Developer, Engineer, Web Design, Graphic Design, Special Effects, Animation, Portfolio" />
 
     <meta property="fb:app_id" content="1583762775239345">
     <meta property="og:title" content="Brock Beldham Interactive Designer" />
