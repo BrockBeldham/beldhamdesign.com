@@ -467,7 +467,6 @@ input[type="checkbox"]:focus + label:before {
 .home h2 {
   font-size: 48px;
   margin-bottom: 100px;
-  text-shadow: 1px 1px 0px #FFFFFF;
 }
 .home .fa {
   width: 60px;
