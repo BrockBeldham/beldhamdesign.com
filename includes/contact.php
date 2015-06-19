@@ -1,7 +1,7 @@
 <section id="contact" class="container">
     <div class="contact">
         <h2>Contact</h2>
-        <h6>Feel like making something awesome? Contact me below:</h6>
+        <h3>Feel like making something awesome? Contact me below:</h3>
         <ul class="icon-list">
             <li class="icon-list-item">
                 <a href="mailto:brockbeldham@gmail.com"

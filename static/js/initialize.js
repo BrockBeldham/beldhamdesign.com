@@ -176,8 +176,9 @@
     // open up the work popup and insert content using underscore template
     Core.prototype._handleWorkOpen = function ($pop, $popContent, data, event) {
         event.preventDefault();
+        console.log(event);
 
-        var targetID = event.target.id.slice(-1);
+        var targetID = event.currentTarget.id.slice(-1);
         var $workTemplate = $(this.config.templates.work);
         var template = _.template($workTemplate.html());
 

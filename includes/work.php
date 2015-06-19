@@ -1,86 +1,91 @@
 <section id="work" class="container">
     <div class="work">
         <h2>Work</h2>
-        <h6>Here are some things I'm proud to have been a part of:</h6>
+        <h3>Here are some things I'm proud to have been a part of:</h3>
         <div class="pop">
             <div class="pop-content"></div>
         </div>
         <ul class="work-list">
-            <li class="work-list-item">
-                <div class="work-overlay">
-                    <a href="#"
-                    class="icon-link"
-                    data-work-info
-                    data-event-category="work"
-                    data-event-action="details"
-                    data-event-label="workPiece1_meadJohnson">
-                        <i class="fa fa-info" id="workPiece1"></i>
-                    </a>
+            <li class="work-list-item"
+            data-work-info
+            data-event-category="work"
+            data-event-action="details"
+            data-event-label="workPiece1_meadJohnson"
+            id="workPiece1">
+                <div class="work-overlay"></div>
+                <div class="work-list-item-cnt">
+                    <i class="fa fa-plus"></i>
+                    <h4>Mead Johnson</h4>
+                    <h5>Developer</h5>
                 </div>
                 <img src="static/img/work/work-1.jpg" alt="">
             </li>
-            <li class="work-list-item">
-                <div class="work-overlay">
-                    <a href="#"
-                    class="icon-link"
-                    data-work-info
-                    data-event-category="work"
-                    data-event-action="details"
-                    data-event-label="workPiece2_kraftProjectPlay">
-                        <i class="fa fa-info" id="workPiece2"></i>
-                    </a>
+            <li class="work-list-item"
+            data-event-category="work"
+            data-event-action="details"
+            data-event-label="workPiece2_kraftProjectPlay"
+            id="workPiece2">
+                <div class="work-overlay"></div>
+                <div class="work-list-item-cnt">
+                    <i class="fa fa-plus"></i>
+                    <h4>Kraft Project Play</h4>
+                    <h5>Developer</h5>
                 </div>
                 <img src="static/img/work/work-2.jpg" alt="">
             </li>
-            <li class="work-list-item">
-                <div class="work-overlay">
-                    <a href="#"
-                    class="icon-link"
-                    data-work-info
-                    data-event-category="work"
-                    data-event-action="details"
-                    data-event-label="workPiece3_buildForce">
-                        <i class="fa fa-info" id="workPiece3"></i>
-                    </a>
+            <li class="work-list-item"
+            data-work-info
+            data-event-category="work"
+            data-event-action="details"
+            data-event-label="workPiece3_buildForce"
+            id="workPiece3">
+                <div class="work-overlay"></div>
+                <div class="work-list-item-cnt">
+                    <i class="fa fa-plus"></i>
+                    <h4>Build Force</h4>
+                    <h5>Developer</h5>
                 </div>
                 <img src="static/img/work/work-3.jpg" alt="">
             </li>
-            <li class="work-list-item">
-                <div class="work-overlay">
-                    <a href="#"
-                    class="icon-link"
-                    data-work-info
-                    data-event-category="work"
-                    data-event-action="details"
-                    data-event-label="workPiece4_ananCloud">
-                        <i class="fa fa-info" id="workPiece4"></i>
-                    </a>
+            <li class="work-list-item"
+            data-work-info
+            data-event-category="work"
+            data-event-action="details"
+            data-event-label="workPiece4_ananCloud"
+            id="workPiece4">
+                <div class="work-overlay"></div>
+                <div class="work-list-item-cnt">
+                    <i class="fa fa-plus"></i>
+                    <h4>Anan Cloud</h4>
+                    <h5>Designer/Developer</h5>
                 </div>
                 <img src="static/img/work/work-4.jpg" alt="">
             </li>
-            <li class="work-list-item">
-                <div class="work-overlay">
-                    <a href="#"
-                    class="icon-link"
-                    data-work-info
-                    data-event-category="work"
-                    data-event-action="details"
-                    data-event-label="workPiece5_solarSystem">
-                        <i class="fa fa-info" id="workPiece5"></i>
-                    </a>
+            <li class="work-list-item"
+            data-work-info
+            data-event-category="work"
+            data-event-action="details"
+            data-event-label="workPiece5_solarSystem"
+            id="workPiece5">
+                <div class="work-overlay"></div>
+                <div class="work-list-item-cnt">
+                    <i class="fa fa-plus"></i>
+                    <h4>Three.js Solar System</h4>
+                    <h5>Creator</h5>
                 </div>
                 <img src="static/img/work/work-5.jpg" alt="">
             </li>
-            <li class="work-list-item">
-                <div class="work-overlay">
-                    <a href="#"
-                    class="icon-link"
-                    data-work-info
-                    data-event-category="work"
-                    data-event-action="details"
-                    data-event-label="workPiece6_slideJar">
-                        <i class="fa fa-info" id="workPiece6"></i>
-                    </a>
+            <li class="work-list-item"
+            data-work-info
+            data-event-category="work"
+            data-event-action="details"
+            data-event-label="workPiece6_slideJar"
+            id="workPiece6">
+                <div class="work-overlay"></div>
+                <div class="work-list-item-cnt">
+                    <i class="fa fa-plus"></i>
+                    <h4>SlideJar</h4>
+                    <h5>Designer</h5>
                 </div>
                 <img src="static/img/work/work-6.jpg" alt="">
             </li>

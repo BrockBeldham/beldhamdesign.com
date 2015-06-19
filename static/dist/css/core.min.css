@@ -158,7 +158,8 @@ h2 {
   margin-bottom: 20px;
 }
 h3 {
-  font-size: 48px;
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 h4 {
   font-size: 36px;
@@ -167,10 +168,6 @@ h4 {
 h5 {
   font-size: 30px;
   margin-bottom: 15px;
-}
-h6 {
-  font-size: 22px;
-  margin-bottom: 20px;
 }
 p {
   margin-bottom: 20px;
@@ -467,7 +464,8 @@ input[type="checkbox"]:focus + label:before {
   text-align: center;
   padding-bottom: 20px;
 }
-.home h3 {
+.home h2 {
+  font-size: 48px;
   margin-bottom: 100px;
   text-shadow: 1px 1px 0px #FFFFFF;
 }
@@ -498,7 +496,7 @@ input[type="checkbox"]:focus + label:before {
   .home {
     max-width: 100%;
   }
-  .home h3 {
+  .home h2 {
     margin-bottom: 40px;
   }
   .home .fa {
@@ -513,7 +511,7 @@ input[type="checkbox"]:focus + label:before {
   .home {
     max-width: 100%;
   }
-  .home h3 {
+  .home h2 {
     margin-bottom: 20px;
   }
   .home .fa {
@@ -544,6 +542,7 @@ input[type="checkbox"]:focus + label:before {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -553,6 +552,11 @@ input[type="checkbox"]:focus + label:before {
 .work .work-list-item:hover .work-overlay {
   opacity: 1;
   filter: alpha(opacity=100);
+}
+.work .work-list-item:hover .work-list-item-cnt {
+  -webkit-transform: translate(0, 20px);
+  -ms-transform: translate(0, 20px);
+  transform: translate(0, 20px);
 }
 .work .work-list-item:hover img {
   -webkit-transform: translate(5%, 5%) scale(1.2);
@@ -595,6 +599,35 @@ input[type="checkbox"]:focus + label:before {
   transition: all 0.2s ease;
   text-align: center;
   z-index: 1;
+}
+.work .work-list-item-cnt {
+  padding: 10px 10px 20px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  -webkit-transition: all 0.2s cubic-bezier(0.15, 0.03, 0.62, 1.2);
+  transition: all 0.2s cubic-bezier(0.15, 0.03, 0.62, 1.2);
+  -webkit-transform: translate(0, 200px);
+  -ms-transform: translate(0, 200px);
+  transform: translate(0, 200px);
+}
+.work .work-list-item-cnt h4 {
+  font-size: 24px;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0 0 5px;
+}
+.work .work-list-item-cnt h5 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.work .work-list-item-cnt .fa-plus {
+  font-size: 24px;
+  float: right;
+  margin: 5px 0 0 0;
 }
 .work .fa-info {
   font-size: 60px;
@@ -981,7 +1014,7 @@ input[type="checkbox"]:focus + label:before {
     font-size: 50px;
   }
   h3 {
-    font-size: 40px;
+    font-size: 22px;
   }
   h4 {
     font-size: 27px;
@@ -992,7 +1025,7 @@ input[type="checkbox"]:focus + label:before {
     font-size: 32px;
   }
   h3 {
-    font-size: 30px;
+    font-size: 20px;
   }
   h4 {
     font-size: 18px;
@@ -1015,7 +1048,7 @@ input[type="checkbox"]:focus + label:before {
     text-align: center;
   }
   h3 {
-    font-size: 22px;
+    font-size: 18px;
   }
   h4 {
     font-size: 20px;

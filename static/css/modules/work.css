@@ -17,6 +17,7 @@
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -26,6 +27,11 @@
 .work .work-list-item:hover .work-overlay {
   opacity: 1;
   filter: alpha(opacity=100);
+}
+.work .work-list-item:hover .work-list-item-cnt {
+  -webkit-transform: translate(0, 20px);
+  -ms-transform: translate(0, 20px);
+  transform: translate(0, 20px);
 }
 .work .work-list-item:hover img {
   -webkit-transform: translate(5%, 5%) scale(1.2);
@@ -68,6 +74,35 @@
   transition: all 0.2s ease;
   text-align: center;
   z-index: 1;
+}
+.work .work-list-item-cnt {
+  padding: 10px 10px 20px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  -webkit-transition: all 0.2s cubic-bezier(0.15, 0.03, 0.62, 1.2);
+  transition: all 0.2s cubic-bezier(0.15, 0.03, 0.62, 1.2);
+  -webkit-transform: translate(0, 200px);
+  -ms-transform: translate(0, 200px);
+  transform: translate(0, 200px);
+}
+.work .work-list-item-cnt h4 {
+  font-size: 24px;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0 0 5px;
+}
+.work .work-list-item-cnt h5 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.work .work-list-item-cnt .fa-plus {
+  font-size: 24px;
+  float: right;
+  margin: 5px 0 0 0;
 }
 .work .fa-info {
   font-size: 60px;

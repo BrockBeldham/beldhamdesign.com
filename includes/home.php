@@ -1,6 +1,6 @@
 <section id="home" class="container">
     <div class="home">
-        <h3>Hi, my name is Brock. I like to make <strong>innovative</strong>, <strong>engaging</strong>, <strong>and awesome</strong> web applications. Check out my work and let's start something awesome.</h3>
+        <h2>Hi, my name is Brock. I like to make <strong>innovative</strong>, <strong>engaging</strong>, <strong>and awesome</strong> web applications. Check out my work and let's start something awesome.</h2>
         <div class="icon-list">
             <a href="mailto:brockbeldham@gmail.com"
             target="_blank"

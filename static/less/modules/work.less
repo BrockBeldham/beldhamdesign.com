@@ -20,6 +20,7 @@
         box-sizing: border-box;
         position: relative;
         overflow: hidden;
+        cursor: pointer;
         .transition(all 0.5s ease);
         
         &:nth-child(3n+1) {
@@ -29,6 +30,10 @@
         &:hover {
             .work-overlay {
                 .opacity(100);
+            }
+
+            .work-list-item-cnt {
+                .translate(0, 20px);
             }
 
             img {
@@ -74,6 +79,35 @@
         .transition(all 0.2s ease);
         text-align: center;
         z-index: 1;
+    }
+
+    .work-list-item-cnt {
+        padding: 10px 10px 20px;
+        background: @white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        .transition(all 0.2s cubic-bezier(0.15, 0.03, 0.62, 1.2));
+        .translate(0, 200px);
+
+        h4 {
+            font-size: 24px;
+            #default-font.normal();
+            margin: 0 0 5px;
+        }
+
+        h5 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .fa-plus {
+            font-size: 24px;
+            float: right;
+            margin: 5px 0 0 0;
+        }
     }
 
     .fa-info {
