@@ -181,8 +181,9 @@
         var targetID = event.currentTarget.id.slice(-1);
         var $workTemplate = $(this.config.templates.work);
         var template = _.template($workTemplate.html());
+        var scrollTopOffset = $pop.position().top;
 
-        $("html").velocity("scroll", { offset: "200px", mobileHA: false });
+        $("html").velocity("scroll", { offset: scrollTopOffset, mobileHA: false });
 
         $popContent.html(template(data.work[targetID - 1]));
         this._bindWorkClose();
