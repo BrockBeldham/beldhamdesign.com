@@ -33,7 +33,7 @@
             }
 
             .work-list-item-cnt {
-                .translate(0, 20px);
+                .translate(0, 0);
             }
 
             img {
@@ -82,7 +82,7 @@
     }
 
     .work-list-item-cnt {
-        padding: 10px 10px 20px;
+        padding: 10px;
         background: @white;
         position: absolute;
         bottom: 0;
@@ -100,7 +100,7 @@
 
         h5 {
             font-size: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 5px;
         }
 
         .fa-plus {
@@ -226,13 +226,6 @@
 @media screen and (min-width: @layout_tablet_min) and (max-width: @layout_tablet_max) {
     .work {
         width: 100%;
-
-        .fa {
-            font-size: 50px;
-            width: 60px;
-            height: 60px;
-            line-height: 65px;
-        }
     }
 }
 
@@ -243,6 +236,7 @@
         .work-list-item {
             width: 48%;
             margin: 0 -4px 20px 4%;
+            vertical-align: top;
 
             &:nth-child(3n+1) {
                 margin-left: 4%;
@@ -251,13 +245,30 @@
             &:nth-child(2n+1) {
                 margin-left: 0;
             }
+
+            &:hover img {
+                -webkit-transform: translate(0, 0) scale(1);
+                -ms-transform: translate(0, 0) scale(1);
+                transform: translate(0, 0) scale(1);
+            }
         }
 
-        .fa {
-            font-size: 50px;
-            width: 60px;
-            height: 60px;
-            line-height: 65px;
+        .work-overlay {
+            display: none;
+        }
+
+        .work-list-item-cnt {
+            position: static;
+            .translate(0, 0);
+
+            h4 {
+                font-size: 18px;
+            }
+
+            h5 {
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
         }
     }
 }
@@ -278,6 +289,30 @@
 
             &:nth-child(2n+1) {
                 margin-left: auto;
+            }
+
+            &:hover img {
+                -webkit-transform: translate(0, 0) scale(1);
+                -ms-transform: translate(0, 0) scale(1);
+                transform: translate(0, 0) scale(1);
+            }
+        }
+
+        .work-overlay {
+            display: none;
+        }
+
+        .work-list-item-cnt {
+            position: static;
+            .translate(0, 0);
+
+            h4 {
+                font-size: 18px;
+            }
+
+            h5 {
+                font-size: 16px;
+                margin-bottom: 5px;
             }
         }
     }

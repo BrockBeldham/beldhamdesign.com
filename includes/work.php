@@ -13,12 +13,12 @@
             data-event-label="workPiece1_meadJohnson"
             id="workPiece1">
                 <div class="work-overlay"></div>
+                <img src="static/img/work/work-1.jpg" alt="">
                 <div class="work-list-item-cnt">
                     <i class="fa fa-plus"></i>
                     <h4>Mead Johnson</h4>
                     <h5>Developer</h5>
                 </div>
-                <img src="static/img/work/work-1.jpg" alt="">
             </li>
             <li class="work-list-item"
             data-work-info
@@ -27,12 +27,12 @@
             data-event-label="workPiece2_kraftProjectPlay"
             id="workPiece2">
                 <div class="work-overlay"></div>
+                <img src="static/img/work/work-2.jpg" alt="">
                 <div class="work-list-item-cnt">
                     <i class="fa fa-plus"></i>
                     <h4>Kraft Project Play</h4>
                     <h5>Developer</h5>
                 </div>
-                <img src="static/img/work/work-2.jpg" alt="">
             </li>
             <li class="work-list-item"
             data-work-info
@@ -41,12 +41,12 @@
             data-event-label="workPiece3_buildForce"
             id="workPiece3">
                 <div class="work-overlay"></div>
+                <img src="static/img/work/work-3.jpg" alt="">
                 <div class="work-list-item-cnt">
                     <i class="fa fa-plus"></i>
                     <h4>Build Force</h4>
                     <h5>Developer</h5>
                 </div>
-                <img src="static/img/work/work-3.jpg" alt="">
             </li>
             <li class="work-list-item"
             data-work-info
@@ -55,12 +55,12 @@
             data-event-label="workPiece4_ananCloud"
             id="workPiece4">
                 <div class="work-overlay"></div>
+                <img src="static/img/work/work-4.jpg" alt="">
                 <div class="work-list-item-cnt">
                     <i class="fa fa-plus"></i>
                     <h4>Anan Cloud</h4>
                     <h5>Designer/Developer</h5>
                 </div>
-                <img src="static/img/work/work-4.jpg" alt="">
             </li>
             <li class="work-list-item"
             data-work-info
@@ -69,12 +69,12 @@
             data-event-label="workPiece5_solarSystem"
             id="workPiece5">
                 <div class="work-overlay"></div>
+                <img src="static/img/work/work-5.jpg" alt="">
                 <div class="work-list-item-cnt">
                     <i class="fa fa-plus"></i>
                     <h4>Three.js Solar System</h4>
                     <h5>Creator</h5>
                 </div>
-                <img src="static/img/work/work-5.jpg" alt="">
             </li>
             <li class="work-list-item"
             data-work-info
@@ -83,12 +83,12 @@
             data-event-label="workPiece6_slideJar"
             id="workPiece6">
                 <div class="work-overlay"></div>
+                <img src="static/img/work/work-6.jpg" alt="">
                 <div class="work-list-item-cnt">
                     <i class="fa fa-plus"></i>
                     <h4>SlideJar</h4>
                     <h5>Designer</h5>
                 </div>
-                <img src="static/img/work/work-6.jpg" alt="">
             </li>
         </ul>
     </div>

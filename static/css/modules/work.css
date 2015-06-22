@@ -29,9 +29,9 @@
   filter: alpha(opacity=100);
 }
 .work .work-list-item:hover .work-list-item-cnt {
-  -webkit-transform: translate(0, 20px);
-  -ms-transform: translate(0, 20px);
-  transform: translate(0, 20px);
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 .work .work-list-item:hover img {
   -webkit-transform: translate(5%, 5%) scale(1.2);
@@ -76,7 +76,7 @@
   z-index: 1;
 }
 .work .work-list-item-cnt {
-  padding: 10px 10px 20px;
+  padding: 10px;
   background: #ffffff;
   position: absolute;
   bottom: 0;
@@ -97,7 +97,7 @@
 }
 .work .work-list-item-cnt h5 {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .work .work-list-item-cnt .fa-plus {
   font-size: 24px;
@@ -216,12 +216,6 @@
   .work {
     width: 100%;
   }
-  .work .fa {
-    font-size: 50px;
-    width: 60px;
-    height: 60px;
-    line-height: 65px;
-  }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .work {
@@ -230,6 +224,7 @@
   .work .work-list-item {
     width: 48%;
     margin: 0 -4px 20px 4%;
+    vertical-align: top;
   }
   .work .work-list-item:nth-child(3n+1) {
     margin-left: 4%;
@@ -237,11 +232,26 @@
   .work .work-list-item:nth-child(2n+1) {
     margin-left: 0;
   }
-  .work .fa {
-    font-size: 50px;
-    width: 60px;
-    height: 60px;
-    line-height: 65px;
+  .work .work-list-item:hover img {
+    -webkit-transform: translate(0, 0) scale(1);
+    -ms-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+  .work .work-overlay {
+    display: none;
+  }
+  .work .work-list-item-cnt {
+    position: static;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .work .work-list-item-cnt h4 {
+    font-size: 18px;
+  }
+  .work .work-list-item-cnt h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -259,5 +269,26 @@
   }
   .work .work-list-item:nth-child(2n+1) {
     margin-left: auto;
+  }
+  .work .work-list-item:hover img {
+    -webkit-transform: translate(0, 0) scale(1);
+    -ms-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+  .work .work-overlay {
+    display: none;
+  }
+  .work .work-list-item-cnt {
+    position: static;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .work .work-list-item-cnt h4 {
+    font-size: 18px;
+  }
+  .work .work-list-item-cnt h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
   }
 }
