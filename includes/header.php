@@ -13,13 +13,13 @@
             data-event-category="header"
             data-event-action="title"
             data-event-label="click">
-                <h1>Brock Beldham</h1>
+                <h1><a href="/" class="icon-link">Brock Beldham</a></h1>
             </li>
             <li
             data-event-category="header"
             data-event-action="subtitle"
             data-event-label="click">
-                <h4>Interactive Designer</h4>
+                <h4><a href="/" class="icon-link">Interactive Designer</a></h4>
             </li>
         </ul>
     </div>

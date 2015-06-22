@@ -18,6 +18,10 @@
 .hdr .logo-details {
   padding-left: 135px;
 }
+.hdr .logo-details a:hover {
+  color: #182232;
+  text-decoration: none;
+}
 .nav {
   float: right;
 }
