@@ -21,6 +21,7 @@
                 <img src="static/img/work/work-1.jpg" alt="">
             </li>
             <li class="work-list-item"
+            data-work-info
             data-event-category="work"
             data-event-action="details"
             data-event-label="workPiece2_kraftProjectPlay"
