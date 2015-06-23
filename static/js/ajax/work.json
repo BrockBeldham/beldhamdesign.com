@@ -54,7 +54,7 @@
             "client" : "Personal",
             "role" : "Creator",
             "platform" : "Web App",
-            "link" : "http://www.beldhamdesign.com/SolarSystem",
+            "link" : "http://brockbeldham.github.io/threejs-solar-system-experiment/",
             "summary" : [
                 "I was always interested in what three.js had to offer. I had known about it and admired what it could do since it's inception in 2009. However I never had the proper understanding of javascript in order to build something with it.",
                 "Five years later, with a lot more javascript experience, I had decided to give Three.js another go. I had seen an experiment online with a model of the milky way galaxy, so I decided to create my own model of the Solar System as a personal experiment. The size of the planets and The Sun are to scale. The distance between the planets are a quarter scale. This project to me personally was very satisfying as it showed me how much my skills have improved in five years."
