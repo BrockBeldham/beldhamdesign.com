@@ -1,7 +1,7 @@
 {
     "work" : [
         {
-            "img" : "static/img/work/work-1-content.png",
+            "img" : "static/img/work/work-mjn-content.png",
             "title" : "Mead Johnson Corporate Site",
             "client" : "Mead Johnson",
             "role" : "Developer",
@@ -13,7 +13,7 @@
             ]
         },
         {
-            "img" : "static/img/work/work-2-content.png",
+            "img" : "static/img/work/work-kpp-content.png",
             "title" : "Kraft Project Play 2015",
             "client" : "Kraft Canada",
             "role" : "Developer",
@@ -25,7 +25,7 @@
             ]
         },
         {
-            "img" : "static/img/work/work-3-content.png",
+            "img" : "static/img/work/work-bdf-content.png",
             "title" : "Build Force",
             "client" : "Build Force",
             "role" : "Designer/Developer",
@@ -37,7 +37,7 @@
             ]
         },
         {
-            "img" : "static/img/work/work-4-content.png",
+            "img" : "static/img/work/work-ac-content.png",
             "title" : "Anan Cloud Corporate Site",
             "client" : "Anan Cloud",
             "role" : "Designer/Developer",
@@ -49,7 +49,7 @@
             ]
         },
         {
-            "img" : "static/img/work/work-5-content.png",
+            "img" : "static/img/work/work-sol-content.png",
             "title" : "Three.js Solar System",
             "client" : "Personal",
             "role" : "Creator",
@@ -61,7 +61,7 @@
             ]
         },
         {
-            "img" : "static/img/work/work-6-content.png",
+            "img" : "static/img/work/work-sj-content.png",
             "title" : "Slide Jar Logo",
             "client" : "SlideJar",
             "role" : "Designer",

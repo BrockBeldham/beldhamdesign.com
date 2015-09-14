@@ -13,7 +13,7 @@
             data-event-label="workPiece1_meadJohnson"
             id="workPiece1">
                 <div class="work-overlay"></div>
-                <img src="static/img/work/work-1.jpg" alt="">
+                <img src="static/img/work/work-mjn.jpg" alt="">
                 <div class="work-list-item-cnt">
                     <i class="fa fa-plus"></i>
                     <h4>Mead Johnson</h4>
@@ -27,7 +27,7 @@
             data-event-label="workPiece2_kraftProjectPlay"
             id="workPiece2">
                 <div class="work-overlay"></div>
-                <img src="static/img/work/work-2.jpg" alt="">
+                <img src="static/img/work/work-kpp.jpg" alt="">
                 <div class="work-list-item-cnt">
                     <i class="fa fa-plus"></i>
                     <h4>Kraft Project Play</h4>
@@ -41,7 +41,7 @@
             data-event-label="workPiece3_buildForce"
             id="workPiece3">
                 <div class="work-overlay"></div>
-                <img src="static/img/work/work-3.jpg" alt="">
+                <img src="static/img/work/work-bdf.jpg" alt="">
                 <div class="work-list-item-cnt">
                     <i class="fa fa-plus"></i>
                     <h4>Build Force</h4>
@@ -55,7 +55,7 @@
             data-event-label="workPiece4_ananCloud"
             id="workPiece4">
                 <div class="work-overlay"></div>
-                <img src="static/img/work/work-4.jpg" alt="">
+                <img src="static/img/work/work-ac.jpg" alt="">
                 <div class="work-list-item-cnt">
                     <i class="fa fa-plus"></i>
                     <h4>Anan Cloud</h4>
@@ -69,7 +69,7 @@
             data-event-label="workPiece5_solarSystem"
             id="workPiece5">
                 <div class="work-overlay"></div>
-                <img src="static/img/work/work-5.jpg" alt="">
+                <img src="static/img/work/work-sol.jpg" alt="">
                 <div class="work-list-item-cnt">
                     <i class="fa fa-plus"></i>
                     <h4>Three.js Solar System</h4>
@@ -83,7 +83,7 @@
             data-event-label="workPiece6_slideJar"
             id="workPiece6">
                 <div class="work-overlay"></div>
-                <img src="static/img/work/work-6.jpg" alt="">
+                <img src="static/img/work/work-sj.jpg" alt="">
                 <div class="work-list-item-cnt">
                     <i class="fa fa-plus"></i>
                     <h4>SlideJar</h4>
@@ -107,13 +107,9 @@
             <h5>
                 <% if(link) { %>
                     <a href="<%= link %>"
-
                    target="_blank"
-
                    data-event-category="work"
-
                    data-event-action="link"
-
                    data-event-label="<%= title %>">
                         <%= title %>
                         <i class="fa fa-link"></i>
