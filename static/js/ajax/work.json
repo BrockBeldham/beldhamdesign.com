@@ -1,6 +1,18 @@
 {
     "work" : [
         {
+            "img" : "static/img/work/work-mpg-content.png",
+            "title" : "Art of Saying Goodbye",
+            "client" : "Mount Pleasant Group",
+            "role" : "Developer",
+            "platform" : "Website",
+            "link" : "http://www.artofsayinggoodbye.com",
+            "summary" : [
+                "Mount Pleasant Group was looking for an update to their previous website. They still wanted to push the idea of funeral pre-planning. As part of the overall experience, users would fill a form out asking them a handful of questions about planning their funeral. Once users entered their contact information, they we're entered in for a chance to win Movie tickets.",
+                "The timeline for this project was pretty tight and even though I wasn't offered too much time, I was able to fit in quite a few nice css transitions and animations. I'm quite proud of the animation I was able to pull off with the form. The placeholder text appears to transition into a label for each input field."
+            ]
+        },
+        {
             "img" : "static/img/work/work-mjn-content.png",
             "title" : "Mead Johnson Corporate Site",
             "client" : "Mead Johnson",

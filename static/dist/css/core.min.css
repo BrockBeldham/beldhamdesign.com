@@ -314,6 +314,17 @@ input[type="checkbox"]:focus + label:before {
   position: relative;
   background: transparent;
 }
+@media screen and (max-width: 479px) {
+  html {
+    font-size: 16px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+}
 
 .container {
   min-height: 100%;
@@ -767,10 +778,16 @@ input[type="checkbox"]:focus + label:before {
     -ms-transform: translate(0, 0) scale(1);
     transform: translate(0, 0) scale(1);
   }
+  .work .work-list-item:hover .work-list-item-cnt {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
   .work .work-overlay {
     display: none;
   }
   .work .work-list-item-cnt {
+    padding: 10px;
     position: static;
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -814,10 +831,16 @@ input[type="checkbox"]:focus + label:before {
     -ms-transform: translate(0, 0) scale(1);
     transform: translate(0, 0) scale(1);
   }
+  .work .work-list-item:hover .work-list-item-cnt {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
   .work .work-overlay {
     display: none;
   }
   .work .work-list-item-cnt {
+    padding: 10px;
     position: static;
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -837,6 +860,7 @@ input[type="checkbox"]:focus + label:before {
   .pop .work-content-right {
     width: 100%;
     float: none;
+    padding: 20px 0 0 0;
   }
 }
 

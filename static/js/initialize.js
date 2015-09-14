@@ -176,7 +176,6 @@
     // open up the work popup and insert content using underscore template
     Core.prototype._handleWorkOpen = function ($pop, $popContent, data, event) {
         event.preventDefault();
-        console.log(event);
 
         var targetID = event.currentTarget.id.slice(-1);
         var $workTemplate = $(this.config.templates.work);
@@ -189,12 +188,11 @@
         this._bindWorkClose();
         $pop.addClass('pop-open');
         
-        new AnalyticAttributes();
+        new Portfolio.AnalyticAttributes();
     };
 
     // binding click events to the close button
     Core.prototype._bindWorkClose = function () {
-        console.log('binding');
         var $popClose = $(this.config.selectors.popClose);
         var $pop = $(this.config.selectors.pop);
 
@@ -204,7 +202,6 @@
 
     // close the work popup
     Core.prototype._handlePopClose = function ($pop, event) {
-        console.log('handling');
         event.preventDefault();
         $pop.removeClass('pop-open');
     };

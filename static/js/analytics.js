@@ -5,10 +5,8 @@
     var _         = global._;
     var $         = global.jQuery;
 
-    var AnalyticAttributes = (global.AnalyticAttributes || (global.AnalyticAttributes = { }));
-
     // setting up vars to be used in core
-    var AnalyticAttributes = function (options) {
+    var AnalyticAttributes = Portfolio.AnalyticAttributes = function (options) {
 
         var defaults = {
             scope: 'body',
