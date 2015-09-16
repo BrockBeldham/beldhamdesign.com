@@ -1,6 +1,32 @@
 {
     "work" : [
         {
+            "img" : "static/img/work/work-qbt-content.png",
+            "title" : "Quitbit",
+            "client" : "Mount Pleasant Group",
+            "role" : "Developer",
+            "platform" : "Microsite",
+            "link" : "http://www.quitbit.ca",
+            "summary" : [
+                "A marketing campaign was created for Mount Pleasant Group with the overall goal of raising awareness about funeral pre-planning and driving traffic to their site. Union Creative created a commercial for a fake smart whatch which could predict your death. Users would go to the microsite and, thinking they we're going to pre-order the tech, we're eventually directed to artofsayinggoodbye.com.",
+                "Although the technologies in the project we're anything too special, the overall reception of the campaign was overwhelming. The campaign was featured in both Adweek and The Globe and Mail. The Youtube video now has 45, 000+ views and we had a 50% increase in sign ups compared to last year in the first week of the quitbit campaign alone."
+            ],
+            "sources" : [
+                {
+                    "link" : "http://www.adweek.com/news/advertising-branding/ad-day-amazing-new-gadget-quitbit-tells-you-exactly-when-youll-die-166775",
+                    "label" : "Adweek"
+                },
+                {
+                    "link" : "http://www.theglobeandmail.com/report-on-business/industry-news/marketing/quitbit-funeral-home-group-hopes-humorous-ad-will-get-you-thinking-about-death/article26265568/",
+                    "label" : "The Globe and Mail"
+                },
+                {
+                    "link" : "http://www.brandchannel.com/2015/09/10/quitbit-091015/",
+                    "label" : "Brand Channel"
+                }
+            ]
+        },
+        {
             "img" : "static/img/work/work-mpg-content.png",
             "title" : "Art of Saying Goodbye",
             "client" : "Mount Pleasant Group",

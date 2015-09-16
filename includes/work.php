@@ -10,8 +10,22 @@
             data-work-info
             data-event-category="work"
             data-event-action="details"
-            data-event-label="workPiece_ArtOfSayingGoodbye"
+            data-event-label="workPiece_Quitbit"
             id="workPiece1">
+                <div class="work-overlay"></div>
+                <img src="static/img/work/work-qbt.jpg" alt="">
+                <div class="work-list-item-cnt">
+                    <i class="fa fa-plus"></i>
+                    <h4>Quitbit</h4>
+                    <h5>Developer</h5>
+                </div>
+            </li>
+            <li class="work-list-item"
+            data-work-info
+            data-event-category="work"
+            data-event-action="details"
+            data-event-label="workPiece_ArtOfSayingGoodbye"
+            id="workPiece2">
                 <div class="work-overlay"></div>
                 <img src="static/img/work/work-mpg.jpg" alt="">
                 <div class="work-list-item-cnt">
@@ -25,7 +39,7 @@
             data-event-category="work"
             data-event-action="details"
             data-event-label="workPiece1_meadJohnson"
-            id="workPiece2">
+            id="workPiece3">
                 <div class="work-overlay"></div>
                 <img src="static/img/work/work-mjn.jpg" alt="">
                 <div class="work-list-item-cnt">
@@ -39,7 +53,7 @@
             data-event-category="work"
             data-event-action="details"
             data-event-label="workPiece2_kraftProjectPlay"
-            id="workPiece3">
+            id="workPiece4">
                 <div class="work-overlay"></div>
                 <img src="static/img/work/work-kpp.jpg" alt="">
                 <div class="work-list-item-cnt">
@@ -53,7 +67,7 @@
             data-event-category="work"
             data-event-action="details"
             data-event-label="workPiece3_buildForce"
-            id="workPiece4">
+            id="workPiece5">
                 <div class="work-overlay"></div>
                 <img src="static/img/work/work-bdf.jpg" alt="">
                 <div class="work-list-item-cnt">
@@ -67,7 +81,7 @@
             data-event-category="work"
             data-event-action="details"
             data-event-label="workPiece4_ananCloud"
-            id="workPiece5">
+            id="workPiece6">
                 <div class="work-overlay"></div>
                 <img src="static/img/work/work-ac.jpg" alt="">
                 <div class="work-list-item-cnt">
@@ -81,7 +95,7 @@
             data-event-category="work"
             data-event-action="details"
             data-event-label="workPiece5_solarSystem"
-            id="workPiece6">
+            id="workPiece7">
                 <div class="work-overlay"></div>
                 <img src="static/img/work/work-sol.jpg" alt="">
                 <div class="work-list-item-cnt">
@@ -95,7 +109,7 @@
             data-event-category="work"
             data-event-action="details"
             data-event-label="workPiece6_slideJar"
-            id="workPiece7">
+            id="workPiece8">
                 <div class="work-overlay"></div>
                 <img src="static/img/work/work-sj.jpg" alt="">
                 <div class="work-list-item-cnt">
@@ -138,6 +152,16 @@
             <% _.each(summary, function(summary) { %>
                 <p><%= summary %></p>
             <% }); %>
+            <% if(sources) { %>
+                <% _.each(sources, function(source) { %>
+                    <p>
+                        <a href="<%= source.link %>" target="_blank">
+                            <%= source.label %>
+                            <i class="fa fa-link"></i>
+                        </a>
+                    </p>
+                <% }); %>
+            <% } %>
         </div>
     </div>
 </script>
