@@ -6,121 +6,25 @@
             <div class="pop-content"></div>
         </div>
         <ul class="work-list">
-            <li class="work-list-item"
-            data-work-info
-            data-event-category="work"
-            data-event-action="details"
-            data-event-label="workPiece_Quitbit"
-            id="workPiece1">
-                <div class="work-overlay"></div>
-                <img src="static/img/work/work-qbt.jpg" alt="">
-                <div class="work-list-item-cnt">
-                    <i class="fa fa-plus"></i>
-                    <h4>Quitbit</h4>
-                    <h5>Developer</h5>
-                </div>
-            </li>
-            <li class="work-list-item"
-            data-work-info
-            data-event-category="work"
-            data-event-action="details"
-            data-event-label="workPiece_ArtOfSayingGoodbye"
-            id="workPiece2">
-                <div class="work-overlay"></div>
-                <img src="static/img/work/work-mpg.jpg" alt="">
-                <div class="work-list-item-cnt">
-                    <i class="fa fa-plus"></i>
-                    <h4>Mount Pleasant Group</h4>
-                    <h5>Developer</h5>
-                </div>
-            </li>
-            <li class="work-list-item"
-            data-work-info
-            data-event-category="work"
-            data-event-action="details"
-            data-event-label="workPiece1_meadJohnson"
-            id="workPiece3">
-                <div class="work-overlay"></div>
-                <img src="static/img/work/work-mjn.jpg" alt="">
-                <div class="work-list-item-cnt">
-                    <i class="fa fa-plus"></i>
-                    <h4>Mead Johnson</h4>
-                    <h5>Developer</h5>
-                </div>
-            </li>
-            <li class="work-list-item"
-            data-work-info
-            data-event-category="work"
-            data-event-action="details"
-            data-event-label="workPiece2_kraftProjectPlay"
-            id="workPiece4">
-                <div class="work-overlay"></div>
-                <img src="static/img/work/work-kpp.jpg" alt="">
-                <div class="work-list-item-cnt">
-                    <i class="fa fa-plus"></i>
-                    <h4>Kraft Project Play</h4>
-                    <h5>Developer</h5>
-                </div>
-            </li>
-            <li class="work-list-item"
-            data-work-info
-            data-event-category="work"
-            data-event-action="details"
-            data-event-label="workPiece3_buildForce"
-            id="workPiece5">
-                <div class="work-overlay"></div>
-                <img src="static/img/work/work-bdf.jpg" alt="">
-                <div class="work-list-item-cnt">
-                    <i class="fa fa-plus"></i>
-                    <h4>Build Force</h4>
-                    <h5>Developer</h5>
-                </div>
-            </li>
-            <li class="work-list-item"
-            data-work-info
-            data-event-category="work"
-            data-event-action="details"
-            data-event-label="workPiece4_ananCloud"
-            id="workPiece6">
-                <div class="work-overlay"></div>
-                <img src="static/img/work/work-ac.jpg" alt="">
-                <div class="work-list-item-cnt">
-                    <i class="fa fa-plus"></i>
-                    <h4>Anan Cloud</h4>
-                    <h5>Designer/Developer</h5>
-                </div>
-            </li>
-            <li class="work-list-item"
-            data-work-info
-            data-event-category="work"
-            data-event-action="details"
-            data-event-label="workPiece5_solarSystem"
-            id="workPiece7">
-                <div class="work-overlay"></div>
-                <img src="static/img/work/work-sol.jpg" alt="">
-                <div class="work-list-item-cnt">
-                    <i class="fa fa-plus"></i>
-                    <h4>Three.js Solar System</h4>
-                    <h5>Creator</h5>
-                </div>
-            </li>
-            <li class="work-list-item"
-            data-work-info
-            data-event-category="work"
-            data-event-action="details"
-            data-event-label="workPiece6_slideJar"
-            id="workPiece8">
-                <div class="work-overlay"></div>
-                <img src="static/img/work/work-sj.jpg" alt="">
-                <div class="work-list-item-cnt">
-                    <i class="fa fa-plus"></i>
-                    <h4>SlideJar</h4>
-                    <h5>Designer</h5>
-                </div>
-            </li>
         </ul>
     </div>
 </section>
+<script type="text/template" id="workThumbTemplate">
+    <li class="work-list-item"
+    data-work-info
+    data-event-category="work"
+    data-event-action="details"
+    data-event-label="workPiece<%= index %>_<%= id %>"
+    id="workPiece<%= index %>">
+        <div class="work-overlay"></div>
+        <img src="<%= thumb %>" alt="<%= title %>">
+        <div class="work-list-item-cnt">
+            <i class="fa fa-plus"></i>
+            <h4><%= title %></h4>
+            <h5><%= role %></h5>
+        </div>
+    </li>
+</script>
 <script type="text/template" id="workTemplate">
     <div class="pop-close" data-pop-close>
         <a href="#" class="icon-link">
@@ -152,7 +56,7 @@
             <% _.each(summary, function(summary) { %>
                 <p><%= summary %></p>
             <% }); %>
-            <% if(sources) { %>
+            <% if(typeof sources != 'undefined') { %>
                 <% _.each(sources, function(source) { %>
                     <p>
                         <a href="<%= source.link %>" target="_blank">

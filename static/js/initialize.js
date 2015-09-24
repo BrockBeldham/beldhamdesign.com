@@ -20,6 +20,7 @@
                 navLink: '[data-nav-link]',
                 container: '.container',
                 header: '.hdr',
+                workList: '.work-list',
                 work: '[data-work-info]',
                 popClose: '[data-pop-close]',
                 pop: '.pop',
@@ -35,7 +36,8 @@
                 contact: 'contact'
             },
             templates: {
-                work: '#workTemplate'
+                work: '#workTemplate',
+                workThumb: '#workThumbTemplate',
             }
         };
 
@@ -163,28 +165,36 @@
         });
     };
 
-    // binding click events to the info button on work items
+    // load the work thuymbnails bind click events to them
     Core.prototype._bindWork = function (data) {
-        var $pop = $(this.config.selectors.pop);
-        var $popContent = $(this.config.selectors.popContent);
+        var $workThumbTemplate = $(this.config.templates.workThumb),
+            template = _.template($workThumbTemplate.html()),
+            $workList = $(this.config.selectors.workList);
+
+        _.each(data.work, function(element, index) {
+            element.index = index;
+            $workList.append(template(element));
+        });
 
         var $workItem = $(this.config.selectors.work);
-        var workOpenHandler = _(this._handleWorkOpen).bind(this, $pop, $popContent, data);
+        var workOpenHandler = _(this._handleWorkOpen).bind(this, data);
         $workItem.on('click', workOpenHandler);
     };
 
     // open up the work popup and insert content using underscore template
-    Core.prototype._handleWorkOpen = function ($pop, $popContent, data, event) {
+    Core.prototype._handleWorkOpen = function (data, event) {
         event.preventDefault();
 
-        var targetID = event.currentTarget.id.slice(-1);
-        var $workTemplate = $(this.config.templates.work);
-        var template = _.template($workTemplate.html());
-        var scrollTopOffset = $pop.position().top;
+        var $pop = $(this.config.selectors.pop),
+            $popContent = $(this.config.selectors.popContent),
+            targetID = event.currentTarget.id.slice(-1),
+            $workTemplate = $(this.config.templates.work),
+            template = _.template($workTemplate.html()),
+            scrollTopOffset = $pop.position().top;
 
         $("html").velocity("scroll", { offset: scrollTopOffset, mobileHA: false });
 
-        $popContent.html(template(data.work[targetID - 1]));
+        $popContent.html(template(data.work[targetID]));
         this._bindWorkClose();
         $pop.addClass('pop-open');
         

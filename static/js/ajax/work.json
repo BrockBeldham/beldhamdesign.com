@@ -1,7 +1,9 @@
 {
     "work" : [
         {
+            "id" : "Quitbit",
             "img" : "static/img/work/work-qbt-content.png",
+            "thumb" : "static/img/work/work-qbt-thumb.png",
             "title" : "Quitbit",
             "client" : "Mount Pleasant Group",
             "role" : "Developer",
@@ -27,7 +29,9 @@
             ]
         },
         {
+            "id" : "ArtOfSayingGoodbye",
             "img" : "static/img/work/work-mpg-content.png",
+            "thumb" : "static/img/work/work-mpg-thumb.png",
             "title" : "Art of Saying Goodbye",
             "client" : "Mount Pleasant Group",
             "role" : "Developer",
@@ -39,7 +43,9 @@
             ]
         },
         {
+            "id" : "MeadJohnson",
             "img" : "static/img/work/work-mjn-content.png",
+            "thumb" : "static/img/work/work-mjn-thumb.png",
             "title" : "Mead Johnson Corporate Site",
             "client" : "Mead Johnson",
             "role" : "Developer",
@@ -51,7 +57,9 @@
             ]
         },
         {
+            "id" : "kraftProjectPlay",
             "img" : "static/img/work/work-kpp-content.png",
+            "thumb" : "static/img/work/work-kpp-thumb.png",
             "title" : "Kraft Project Play 2015",
             "client" : "Kraft Canada",
             "role" : "Developer",
@@ -63,7 +71,9 @@
             ]
         },
         {
+            "id" : "buildForce",
             "img" : "static/img/work/work-bdf-content.png",
+            "thumb" : "static/img/work/work-bdf-thumb.png",
             "title" : "Build Force",
             "client" : "Build Force",
             "role" : "Designer/Developer",
@@ -75,7 +85,9 @@
             ]
         },
         {
+            "id" : "ananCloud",
             "img" : "static/img/work/work-ac-content.png",
+            "thumb" : "static/img/work/work-ac-thumb.png",
             "title" : "Anan Cloud Corporate Site",
             "client" : "Anan Cloud",
             "role" : "Designer/Developer",
@@ -87,7 +99,9 @@
             ]
         },
         {
+            "id" : "solarSystem",
             "img" : "static/img/work/work-sol-content.png",
+            "thumb" : "static/img/work/work-sol-thumb.png",
             "title" : "Three.js Solar System",
             "client" : "Personal",
             "role" : "Creator",
@@ -99,7 +113,9 @@
             ]
         },
         {
+            "id" : "slideJar",
             "img" : "static/img/work/work-sj-content.png",
+            "thumb" : "static/img/work/work-sj-thumb.png",
             "title" : "Slide Jar Logo",
             "client" : "SlideJar",
             "role" : "Designer",
