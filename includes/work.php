@@ -14,7 +14,7 @@
     data-work-info
     data-event-category="work"
     data-event-action="details"
-    data-event-label="workPiece<%= index %>_<%= id %>"
+    data-event-label="workPiece_<%= id %>"
     id="workPiece<%= index %>">
         <div class="work-overlay"></div>
         <img src="<%= thumb %>" alt="<%= title %>">

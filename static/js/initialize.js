@@ -63,9 +63,10 @@
 
     // creating backbone routes
     Core.prototype._initRouter = function () {
-        var that = this;
-        var selectors = this.config.selectors;
-        var routes = this.config.routes;
+        var that = this,
+            selectors = this.config.selectors,
+            routes = this.config.routes;
+
         var MyRouter = Backbone.Router.extend({
             routes: {
                 ''            : routes.home,
@@ -99,8 +100,9 @@
 
     // is the page load coming from within the site or external
     Core.prototype._openPage = function (pageId) {
-        var $container = $(this.config.selectors.container);
-        var $pageId = $(pageId);
+        var $container = $(this.config.selectors.container),
+            $pageId = $(pageId);
+
         if ($container.hasClass('active-page')) {
             // internal link
             this._pageTransitionIn($pageId, $container);
@@ -112,9 +114,9 @@
 
     // leaving one page transitioning to dark grey screen
     Core.prototype._pageTransitionIn = function ($pageId, $container) {
-        var transitionDuration = this.config.durations.pageTransition;
-        var that = this
-        var $header = $(this.config.selectors.header);
+        var transitionDuration = this.config.durations.pageTransition,
+            that = this,
+            $header = $(this.config.selectors.header);
 
         $container.velocity({
             top: "100%"
@@ -156,6 +158,7 @@
     // initializing the work section by grabbing the json data for the content
     Core.prototype._initWork = function () {
         var that = this;
+
         $.getJSON("static/js/ajax/work.json").done(function(data) {
             that._bindWork(data);
         })
@@ -176,8 +179,9 @@
             $workList.append(template(element));
         });
 
-        var $workItem = $(this.config.selectors.work);
-        var workOpenHandler = _(this._handleWorkOpen).bind(this, data);
+        var $workItem = $(this.config.selectors.work),
+            workOpenHandler = _(this._handleWorkOpen).bind(this, data);
+
         $workItem.on('click', workOpenHandler);
     };
 
@@ -203,8 +207,8 @@
 
     // binding click events to the close button
     Core.prototype._bindWorkClose = function () {
-        var $popClose = $(this.config.selectors.popClose);
-        var $pop = $(this.config.selectors.pop);
+        var $popClose = $(this.config.selectors.popClose),
+            $pop = $(this.config.selectors.pop);
 
         var popCloseHandler = _(this._handlePopClose).bind(this, $pop);
         $popClose.on('click', popCloseHandler);

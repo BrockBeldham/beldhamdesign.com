@@ -66,7 +66,7 @@
             "platform" : "Web Contest",
             "link" : "http://www.kraftprojectplay.ca",
             "summary" : [
-                "Kraft Project Play was an evolution of the popular Kract Celebration Tour. In the contest people from across Canada nominate their communities for a chance to win upgrades to their local community sport related facility. The contest runs in phases. First, a community member fills out a form in order to nominate thier community. Next the community rallies around their nomination through social media with the use of a custom hashtag. Next, Kraft chooses their top 4 best nominations. Finally, we entered the voting phase where the communities can vote for themselves an infinite amount of times. This was the most intense phase as we had around 100,000 hits to the site per day. The winner of the contest wins $250,000 towards their community project and TSN broadcasts an NHL game from their home town.",
+                "Kraft Project Play was an evolution of the popular Kraft Celebration Tour. In the contest people from across Canada nominate their communities for a chance to win upgrades to their local community sport related facility. The contest runs in phases. First, a community member fills out a form in order to nominate thier community. Next the community rallies around their nomination through social media with the use of a custom hashtag. Next, Kraft chooses their top 4 best nominations. Finally, we entered the voting phase where the communities can vote for themselves an infinite amount of times. This was the most intense phase as we had around 100,000 hits to the site per day. The winner of the contest wins $250,000 towards their community project and TSN broadcasts an NHL game from their home town.",
                 "There were many difficult aspects to this project. The site was responsive of course, but majority of the content was user driven. We as developers had to account for all possible image sizes, users could upload youtube videos of their communities and many other things. Also, with each phase change the content on the site and design of the site changed. This was acheived with an extensive Django backend that swapped out templates based on a timeline. In order to keep voting smooth and avoid hits bringing the site down, the voting process was all ajax. This allowed us to have users vote infinitely without having a page reload everytime."
             ]
         },
@@ -80,7 +80,7 @@
             "platform" : "Web App",
             "link" : null,
             "summary" : [
-                "Build Force came to EdCetra Training in search of a new e-learning course. Their business had gone through a rebranding and their flash based e-learning course was out of date. Build Force wanted a new e-learning course that was redesigned to suit their brand and also had their previous flash modules trnaslated to html/css/js based responsive design.",
+                "Build Force came to EdCetra Training in search of a new e-learning course. Their business had gone through a rebranding and their flash based e-learning course was out of date. Build Force wanted a new e-learning course that was redesigned to suit their brand and also had their previous flash modules translated to html/css/js based responsive design.",
                 "Because EdCetra was such a small business, I was in charge a both design and development of the project. I used their brand colours for most of the UI with elements of blueprints and construction. As a developer there wasn't a flash module I couldn't transfer to 'flashless'."
             ]
         },
@@ -94,7 +94,7 @@
             "platform" : "Website",
             "link" : "http://www.anancloud.com",
             "summary" : [
-                "Anan Cloud is a web service similar to Slide Share. Users can upload their ppt presentations to a cloud storage service. From their they can search through their presentations and thousands of others, select individual slides and create new prentations with those slides.",
+                "Anan Cloud is a web service similar to Slide Share. Users can upload their .ppt presentations to a cloud storage service. From their they can search through their presentations and thousands of others, select individual slides and create new prentations with those slides.",
                 "I designed and developed the user interface of the logged in side of Anan Cloud. I was also tasked with building the responsive portion of the website. This was my first foray into responsive design, both as a designer and a developer. For a junior developer at the time, it was a fantastic learning experience"
             ]
         },
