@@ -23,9 +23,17 @@
     .logo-details {
         padding-left: 135px;
 
-        a:hover {
-            color: @color_default;
-            text-decoration: none;
+        a {
+            &:active,
+            &:focus {
+                text-decoration: none;
+                color: @color_default;
+            }
+            
+            &:hover {
+                color: @color_default;
+                text-decoration: none;
+            }
         }
     }
 }

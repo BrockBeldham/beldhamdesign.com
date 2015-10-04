@@ -142,7 +142,6 @@ html {
 }
 body {
   color: #182232;
-  background-color: #303030;
   overflow-x: hidden;
   perspective: 1500px;
 }
@@ -189,6 +188,11 @@ a:active,
 a:focus {
   text-decoration: none;
   color: #3c76d4;
+}
+a:hover:after,
+a:active:after,
+a:focus:after {
+  background: #3c76d4;
 }
 a:after {
   content: " ";
@@ -329,13 +333,16 @@ input[type="checkbox"]:focus + label:before {
 .container {
   min-height: 100%;
   width: 100%;
-  padding: 200px 40px 0;
+  padding: 150px 40px 0;
   box-sizing: border-box;
   position: absolute;
   z-index: 1;
   display: none;
   background: #e2e2e2;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+.container#home {
+  padding: 200px 40px 0;
 }
 .container.active-page {
   z-index: 2;
@@ -344,7 +351,7 @@ input[type="checkbox"]:focus + label:before {
 .wrapper {
   height: 100%;
   width: 100%;
-  background-color: #303030;
+  background: url('/static/img/bg-black.png') #303030;
 }
 .clearfix:after {
   content: "";
@@ -380,6 +387,11 @@ input[type="checkbox"]:focus + label:before {
 }
 .hdr .logo-details {
   padding-left: 135px;
+}
+.hdr .logo-details a:active,
+.hdr .logo-details a:focus {
+  text-decoration: none;
+  color: #182232;
 }
 .hdr .logo-details a:hover {
   color: #182232;

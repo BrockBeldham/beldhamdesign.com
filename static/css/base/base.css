@@ -11,7 +11,6 @@ html {
 }
 body {
   color: #182232;
-  background-color: #303030;
   overflow-x: hidden;
   perspective: 1500px;
 }
@@ -58,6 +57,11 @@ a:active,
 a:focus {
   text-decoration: none;
   color: #3c76d4;
+}
+a:hover:after,
+a:active:after,
+a:focus:after {
+  background: #3c76d4;
 }
 a:after {
   content: " ";

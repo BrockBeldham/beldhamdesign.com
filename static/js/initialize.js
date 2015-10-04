@@ -172,12 +172,15 @@
     Core.prototype._bindWork = function (data) {
         var $workThumbTemplate = $(this.config.templates.workThumb),
             template = _.template($workThumbTemplate.html()),
-            $workList = $(this.config.selectors.workList);
+            $workList = $(this.config.selectors.workList),
+            contentArr = [];
 
         _.each(data.work, function(element, index) {
             element.index = index;
-            $workList.append(template(element));
+            contentArr.push(template(element))
         });
+
+        $workList.html(contentArr);
 
         var $workItem = $(this.config.selectors.work),
             workOpenHandler = _(this._handleWorkOpen).bind(this, data);
