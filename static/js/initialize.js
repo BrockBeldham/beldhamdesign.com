@@ -2,9 +2,9 @@
     var global = this;
 
     // namespacing
-    var _        = global._;
-    var $        = global.jQuery;
-    var Backbone = global.Backbone;
+    var _        = global._,
+        $        = global.jQuery,
+        Backbone = global.Backbone;
 
     var Portfolio = (global.Portfolio || (global.Portfolio = { }));
 
@@ -12,32 +12,32 @@
     var Core = Portfolio.Core = function (options) {
 
         var defaults = {
-            selectors: {
-                homePage: '#home',
-                workPage: '#work',
-                aboutPage: '#about',
-                contactPage: '#contact',
-                navLink: '[data-nav-link]',
-                container: '.container',
-                header: '.hdr',
-                workList: '.work-list',
-                work: '[data-work-info]',
-                popClose: '[data-pop-close]',
-                pop: '.pop',
-                popContent: '.pop-content'
+            selectors : {
+                homePage       : '#home',
+                workPage       : '#work',
+                aboutPage      : '#about',
+                contactPage    : '#contact',
+                navLink        : '[data-nav-link]',
+                container      : '.container',
+                header         : '.hdr',
+                workList       : '.work-list',
+                work           : '[data-work-info]',
+                popClose       : '[data-pop-close]',
+                pop            : '.pop',
+                popContent     : '.pop-content'
             },
-            durations: {
-                pageTransition: 500
+            durations : {
+                pageTransition : 500
             },
-            routes: {
-                home: 'home',
-                work: 'work',
-                about: 'about',
-                contact: 'contact'
+            routes : {
+                home           : 'home',
+                work           : 'work',
+                about          : 'about',
+                contact        : 'contact'
             },
-            templates: {
-                work: '#workTemplate',
-                workThumb: '#workThumbTemplate',
+            templates : {
+                work           : '#workTemplate',
+                workThumb      : '#workThumbTemplate',
             }
         };
 
@@ -134,15 +134,15 @@
         var that = this;
 
         $pageId.css({
-            zIndex: '3',
-            display: 'block'
+            zIndex  : '3',
+            display : 'block'
         });
         $pageId.velocity({
-            top: '0%'
+            top : '0%'
         },{
-            duration: transitionDuration,
-            easing: 'easeOutSine',
-            complete: function(element) {
+            duration : transitionDuration,
+            easing   : 'easeOutSine',
+            complete : function(element) {
                 that._pageTransitionComplete(element, $container);
             }
         });

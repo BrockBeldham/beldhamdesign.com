@@ -11,11 +11,11 @@
         var defaults = {
             scope: 'body',
             event: {
-                category: 'data-event-category',
-                action: 'data-event-action',
-                label: 'data-event-label'
+                category : 'data-event-category',
+                action   : 'data-event-action',
+                label    : 'data-event-label'
             },
-            namespace: 'AnalyticAttributes'
+            namespace : 'AnalyticAttributes'
         };
 
         this.config = $.extend(true, defaults, options || { });
@@ -24,10 +24,10 @@
     };
 
     AnalyticAttributes.prototype._initialize = function () {
-        var scope    = this.config.scope;
-        var selector = '[' + this.config.event.category + ']';
-        var event    = 'click.' + this.config.namespace;
-        var handler  = _(this._handleEventClick).bind(this);
+        var scope    = this.config.scope,
+            selector = '[' + this.config.event.category + ']',
+            event    = 'click.' + this.config.namespace,
+            handler  = _(this._handleEventClick).bind(this);
 
         $(scope)
             .find(selector)
@@ -36,10 +36,10 @@
     };
 
     AnalyticAttributes.prototype._handleEventClick = function(event) {
-        var $target     = $(event.currentTarget);
-        var category    = $target.attr(this.config.event.category);
-        var action      = $target.attr(this.config.event.action);
-        var label       = $target.attr(this.config.event.label);
+        var $target = $(event.currentTarget),
+            category = $target.attr(this.config.event.category),
+            action = $target.attr(this.config.event.action),
+            label = $target.attr(this.config.event.label);
 
         ga('send', 'event', category, action, label);
     };
