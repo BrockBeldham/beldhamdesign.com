@@ -15,6 +15,7 @@
 .container.active-page {
   z-index: 2;
   display: block;
+  top: 0;
 }
 .wrapper {
   height: 100%;

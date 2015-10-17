@@ -347,6 +347,7 @@ input[type="checkbox"]:focus + label:before {
 .container.active-page {
   z-index: 2;
   display: block;
+  top: 0;
 }
 .wrapper {
   height: 100%;
@@ -495,6 +496,9 @@ input[type="checkbox"]:focus + label:before {
   font-size: 48px;
   margin-bottom: 100px;
 }
+.home .icon-list-item {
+  display: inline-block;
+}
 .home .fa {
   width: 60px;
   height: 60px;
@@ -541,6 +545,9 @@ input[type="checkbox"]:focus + label:before {
   .home h2 {
     font-size: 24px;
     margin-bottom: 20px;
+  }
+  .home .icon-list-item {
+    margin: 0 -4px 20px 0;
   }
   .home .fa {
     width: 40px;
@@ -1130,6 +1137,9 @@ input[type="checkbox"]:focus + label:before {
   .container {
     padding: 100px 40px 0;
   }
+  .container#home {
+    padding: 100px 40px 0;
+  }
 }
 @media screen and (max-width: 479px) {
   h1 {
@@ -1155,6 +1165,9 @@ input[type="checkbox"]:focus + label:before {
     z-index: 2;
   }
   .container {
+    padding: 150px 20px 0;
+  }
+  .container#home {
     padding: 150px 20px 0;
   }
 }

@@ -8,6 +8,9 @@
   font-size: 48px;
   margin-bottom: 100px;
 }
+.home .icon-list-item {
+  display: inline-block;
+}
 .home .fa {
   width: 60px;
   height: 60px;
@@ -54,6 +57,9 @@
   .home h2 {
     font-size: 24px;
     margin-bottom: 20px;
+  }
+  .home .icon-list-item {
+    margin: 0 -4px 20px 0;
   }
   .home .fa {
     width: 40px;
