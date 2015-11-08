@@ -53,6 +53,6 @@
                     <i class="fa fa-file-text"></i>
                 </a>
             </li>
-        </div>
+        </ul>
     </div>
 </section>

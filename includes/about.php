@@ -1,6 +1,5 @@
 <section id="about" class="container">
     <div class="about clearfix">
-        <h2>About</h2>
         <div class="about-left">
             <img src="static/img/about/main.jpg">
             <ul class="icon-list">

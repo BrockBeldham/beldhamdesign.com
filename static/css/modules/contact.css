@@ -3,47 +3,47 @@
   width: 100%;
   margin: 0 auto;
   padding-bottom: 20px;
+  text-align: center;
+}
+.contact h3 {
+  font-size: 42px;
+}
+.contact hr {
+  max-width: 100px;
+  margin: 0 auto 20px;
+  border-top: 2px solid #3c76d4;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+.contact .mail {
+  font-size: 24px;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
 .contact .icon-list {
-  margin: 20px 0;
+  margin: 50px 0;
 }
 .contact .icon-list-item {
-  margin: 0 0 20px;
+  display: inline-block;
 }
-.contact .icon-list-item:hover .fa {
-  background-color: #182232;
-}
-.contact .icon-list-item:hover .icon-label {
-  width: 50%;
-}
-.contact .icon-list-item a {
-  display: block;
-}
-.contact .icon-list-item .fa {
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  font-size: 30px;
+.contact .fa {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 40px;
   color: #ffffff;
   display: inline-block;
   vertical-align: middle;
-  text-align: center;
   background-color: #3c76d4;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
-  border-radius: 30px;
+  border-radius: 100%;
   cursor: pointer;
   margin: 0 10px;
 }
-.contact .icon-list-item .icon-label {
-  white-space: nowrap;
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  width: 0;
-  -webkit-transition: width 0.25s ease;
-  transition: width 0.25s ease;
-  font-size: 18px;
+.contact .fa:hover {
+  background-color: #182232;
 }
 @media screen and (min-width: 960px) and (max-width: 1279px) {
   
@@ -52,24 +52,24 @@
   
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .contact .icon-list-item:hover .icon-label {
-    width: calc(100% - 70px);
+  .contact h3 {
+    font-size: 36px;
   }
 }
 @media screen and (max-width: 479px) {
-  .contact .icon-list-item {
-    margin-bottom: 10px;
+  .contact h3 {
+    font-size: 24px;
   }
-  .contact .icon-list-item .fa {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    font-size: 20px;
+  .contact .mail {
+    font-size: 18px;
   }
-  .contact .icon-list-item .icon-label {
-    font-size: 14px;
+  .contact .icon-list {
+    margin: 20px 0;
   }
-  .contact .icon-list-item:hover .icon-label {
-    width: calc(100% - 70px);
+  .contact .fa {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
   }
 }

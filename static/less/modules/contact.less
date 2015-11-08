@@ -5,88 +5,87 @@
     width: 100%;
     margin: 0 auto;
     padding-bottom: 20px;
+    text-align: center;
+
+    h3 {
+        font-size: 42px;
+    }
+
+    hr {
+        max-width: 100px;
+        margin: 0 auto 20px;
+        border-top: 2px solid @blue;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .mail {
+        font-size: 24px;
+        #default-font.normal();
+    }
 
     .icon-list {
-        margin: 20px 0;
+        margin: 50px 0;
     }
 
     .icon-list-item {
-        margin: 0 0 20px;
+        display: inline-block;
+    }
+
+    .fa {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 40px;
+        color: @white;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: @blue;
+        .transition(all 0.25s ease);
+        border-radius: 100%;
+        cursor: pointer;
+        margin: 0 10px;
 
         &:hover {
-            .fa {
-                background-color: @color_default;
-            }
-
-            .icon-label {
-                width: 50%;
-            }
-        }
-
-        a {
-            display: block;
-        }
-
-        .fa {
-            width: 45px;
-            height: 45px;
-            line-height: 45px;
-            font-size: 30px;
-            color: @white;
-            display: inline-block;
-            vertical-align: middle;
-            text-align: center;
-            background-color: @blue;
-            .transition(all 0.25s ease);
-            border-radius: 30px;
-            cursor: pointer;
-            margin: 0 10px;
-        }
-
-        .icon-label {
-            white-space: nowrap;
-            display: inline-block;
-            vertical-align: middle;
-            overflow: hidden;
-            width: 0;
-            .transition(width 0.25s ease);
-            font-size: 18px;
+            background-color: @color_default;
         }
     }
 }
 
 @media screen and (min-width: @layout_sm_desktop_min) and (max-width: @layout_sm_desktop_max) {
-    .contact {
-    }
 }
 
 @media screen and (min-width: @layout_tablet_min) and (max-width: @layout_tablet_max) {
-    .contact {
-    }
 }
 
 @media screen and (min-width: @layout_smtablet_min) and (max-width: @layout_smtablet_max) {
-    .contact .icon-list-item:hover .icon-label {
-        width: ~"calc(100% - 70px)";
+    .contact {
+        h3 {
+            font-size: 36px;
+        }
     }
 }
 
 @media screen and (max-width: @layout_phone_max) {
-    .contact .icon-list-item{
-        margin-bottom: 10px;
+    .contact {
+        h3 {
+            font-size: 24px;
+        }
+
+        .mail {
+            font-size: 18px;
+        }
+
+        .icon-list {
+            margin: 20px 0;
+        }
 
         .fa {
-            width: 35px;
-            height: 35px;
-            line-height: 35px;
-            font-size: 20px;
-        }
-        .icon-label {
-            font-size: 14px;
-        }
-
-        &:hover .icon-label {
-            width: ~"calc(100% - 70px)";
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 24px;
         }
     }
 }

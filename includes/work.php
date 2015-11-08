@@ -1,6 +1,5 @@
 <section id="work" class="container">
     <div class="work">
-        <h2>Work</h2>
         <h3>Here are some things I'm proud to have been a part of:</h3>
         <div class="pop">
             <div class="pop-content"></div>
