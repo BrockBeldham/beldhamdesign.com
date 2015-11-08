@@ -15,16 +15,6 @@
                     </a>
                 </li>
                 <li class="icon-list-item">
-                    <a href="https://www.facebook.com/brock.beldham"
-                    target="_blank"
-                    class="icon-link"
-                    data-event-category="about"
-                    data-event-action="contacts"
-                    data-event-label="email">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                </li>
-                <li class="icon-list-item">
                     <a href="https://twitter.com/BrockBeldham"
                     target="_blank"
                     class="icon-link"
@@ -52,6 +42,17 @@
                     data-event-action="contacts"
                     data-event-label="email">
                         <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="icon-list-item">
+                    <a href="static/docs/resume.pdf"
+                    target="_blank"
+                    download
+                    class="icon-link"
+                    data-event-category="about"
+                    data-event-action="contacts"
+                    data-event-label="resume">
+                        <i class="fa fa-file-text"></i>
                     </a>
                 </li>
             </ul>

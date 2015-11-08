@@ -13,16 +13,6 @@
                 </a>
             </li>
             <li class="icon-list-item">
-                <a href="https://www.facebook.com/brock.beldham"
-                target="_blank"
-                class="icon-link"
-                data-event-category="home"
-                data-event-action="contacts"
-                data-event-label="facebook">
-                    <i class="fa fa-facebook"></i>
-                </a>
-            </li>
-            <li class="icon-list-item">
                 <a href="https://twitter.com/BrockBeldham"
                 target="_blank"
                 class="icon-link"
