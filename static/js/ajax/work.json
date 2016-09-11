@@ -6,12 +6,12 @@
             "thumb" : "static/img/work/work-unn-thumb.png",
             "title" : "Union",
             "client" : "Union Creative",
-            "role" : "Lead Frontend Developer",
+            "role" : "Lead Front-End Developer",
             "platform" : "Website",
             "link" : "http://www.unioncreative.ca",
             "summary" : [
-                "As part of being the Lead Frontend at Union Creative, I was part of the team that redesigned Union's corporate website. Union Creative strived to be an innovative integrated advertising agency and a Wordpress site with a boring design just wouldn't cut it.",
-                "With the previous site in Wordpress, very few people updated it and the content got stale. So keeping the content on the new site 'fresh' was the major challenge. The new site would be based around social feeds. A Django Backend would use Twitter and Instagram's APIs to pull in social feeds and store tweets and photos in the CMS. The Frontend would get a JSON response from the Backend that would be the basis for the Model in a Backbone app. From there the content was fit into a side scrolling grid pattern with various layout templates chosen by the CMS. Anyone at Union could contribute content to the new website to keep it 'fresh'. an Innovative solution for an Integrated industry."
+                "As part of being the Lead Front-End at Union Creative, I was part of the team that redesigned Union's corporate website. Union Creative strived to be an innovative integrated advertising agency and a Wordpress site with a boring design just wouldn't cut it.",
+                "With the previous site in Wordpress, very few people updated it and the content got stale. So keeping the content on the new site 'fresh' was the major challenge. The new site would be based around social feeds. A Django Backend would use Twitter and Instagram's APIs to pull in social feeds and store tweets and photos in the CMS. The Front-End would get a JSON response from the Backend that would be the basis for the Model in a Backbone app. From there the content was fit into a side scrolling grid pattern with various layout templates chosen by the CMS. Anyone at Union could contribute content to the new website to keep it 'fresh'. an Innovative solution for an Integrated industry."
             ],
             "sources" : [
                 {
@@ -26,6 +26,20 @@
                     "link" : "http://www.brandchannel.com/2015/09/10/quitbit-091015/",
                     "label" : "Brand Channel"
                 }
+            ]
+        },
+        {
+            "id" : "NotYet",
+            "img" : "static/img/work/work-mpg-content.png",
+            "thumb" : "static/img/work/work-mpg-thumb.png",
+            "title" : "Not-Yet.ca",
+            "client" : "Mount Pleasant Group",
+            "role" : "Lead Front-End Developer",
+            "platform" : "Website",
+            "link" : "http://www.not-yet.ca",
+            "summary" : [
+                "For Mount Pleasnat's 2016 campaign was not-yet.ca. The campaign was a fully integrated campaign with 30 second video spots pushing to the not-yet.ca website. The idea was a user would arrive at the site and get completely overwhelmed with statistics about death. So overwhelmed that they would want help.",
+                "The timeline for this project was quite tight and even though I wasn't offered too much time, I was able to fit in quite a few nice css transitions and animations. I'm quite proud of the animation I was able to pull off with the form. The placeholder text appears to transition into a label for each input field. Also, animating the coloured backgrounds was a simple yet effective solution to immitate the animation style in the videos."
             ]
         },
         {
@@ -39,9 +53,13 @@
             "link" : "http://www.quitbit.ca",
             "summary" : [
                 "A marketing campaign was created for Mount Pleasant Group with the overall goal of raising awareness about funeral pre-planning and driving traffic to their site. Union Creative created a commercial for a fake smart whatch which could predict your death. Users would go to the microsite and, thinking they we're going to pre-order the tech, we're eventually directed to artofsayinggoodbye.com.",
-                "Although the technologies in the project we're anything too special, the overall reception of the campaign was overwhelming. The campaign was featured in both Adweek and The Globe and Mail. The Youtube video now has 45, 000+ views and we had a 50% increase in sign ups compared to last year in the first week of the quitbit campaign alone."
+                "Although the technologies in the project we're nothing special, the overall reception of the campaign was overwhelming. The campaign was featured in both Adweek and The Globe and Mail. The Youtube video now has 200, 000+ views and we had a 50% increase in sign ups compared to last year in the first week of the quitbit campaign alone."
             ],
             "sources" : [
+                {
+                    "link" : "https://www.youtube.com/watch?v=JTtlkdKyOWc",
+                    "label" : "Youtube Spot"
+                },
                 {
                     "link" : "http://www.adweek.com/news/advertising-branding/ad-day-amazing-new-gadget-quitbit-tells-you-exactly-when-youll-die-166775",
                     "label" : "Adweek"
@@ -54,20 +72,6 @@
                     "link" : "http://www.brandchannel.com/2015/09/10/quitbit-091015/",
                     "label" : "Brand Channel"
                 }
-            ]
-        },
-        {
-            "id" : "ArtOfSayingGoodbye",
-            "img" : "static/img/work/work-mpg-content.png",
-            "thumb" : "static/img/work/work-mpg-thumb.png",
-            "title" : "Art of Saying Goodbye",
-            "client" : "Mount Pleasant Group",
-            "role" : "Developer",
-            "platform" : "Website",
-            "link" : "http://www.artofsayinggoodbye.com",
-            "summary" : [
-                "Mount Pleasant Group was looking for an update to their previous website. They still wanted to push the idea of funeral pre-planning. As part of the overall experience, users would fill a form out asking them a handful of questions about planning their funeral. Once users entered their contact information, they we're entered in for a chance to win Movie tickets.",
-                "The timeline for this project was pretty tight and even though I wasn't offered too much time, I was able to fit in quite a few nice css transitions and animations. I'm quite proud of the animation I was able to pull off with the form. The placeholder text appears to transition into a label for each input field."
             ]
         },
         {
