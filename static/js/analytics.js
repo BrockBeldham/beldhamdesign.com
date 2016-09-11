@@ -18,16 +18,16 @@
             namespace : 'AnalyticAttributes'
         };
 
-        this.config = $.extend(true, defaults, options || { });
+        this.config = _.extend(defaults, options || { });
 
         this._initialize();
     };
 
     AnalyticAttributes.prototype._initialize = function () {
-        var scope    = this.config.scope,
+        var scope    = document.querySelector(this.config.scope),
             selector = '[' + this.config.event.category + ']',
             event    = 'click.' + this.config.namespace,
-            handler  = _(this._handleEventClick).bind(this);
+            handler  = _.bind(this._handleEventClick, this);
 
         $(scope)
             .find(selector)
